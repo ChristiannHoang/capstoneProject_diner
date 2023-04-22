@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #ff6600;
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #161c2db3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
