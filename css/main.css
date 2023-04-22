@@ -6,6 +6,7 @@ header {
     right: 0;
     z-index: 1;
 }
+
 .header__content {
     padding: 40px 0 20px;
 }
@@ -21,12 +22,15 @@ header {
     padding: 10px 50px 10px 20px;
     border-radius: 6px;
     outline: none;
-    border: none;
+    border: 2px solid transparent;
+    transition: all .5s;
+    color: rgba(22, 28, 45, 0.7);
 }
 
-.header__icon {
-    text-decoration: none;
-    color: var(--white-color);
+.header__search .form__input:hover,
+.header__search .form__input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
 }
 
 .header__search-icon {
@@ -40,14 +44,98 @@ header {
 .header__light-icon {
     font-size: 24px;
     transform: rotate(-20deg);
+    color: var(--white-color);
+    cursor: pointer; 
+    transition: all .5s;
 }
 
 .header__light-icon {
     display: none;
 }
 
+.header__bar {
+    cursor: pointer;
+}
+
 .header__bar-icon {
     font-size: 28px;
+    color: var(--white-color);
+    transition: all .5s;
+}
+
+.header__bar:hover .header__bar-icon,
+.header__dark-icon:hover,
+.header__light-icon:hover  {
+    color: var(--primary-color);
+}
+
+.header__nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 3, 0, 0.77);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: navFadeIn .2s linear;
+    /* CHỈNH NÓ FADE OUT NHƯ NÀO NHỈ?  */
+}
+
+@keyframes navFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.nav__close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 6px;
+    border: none;
+}
+
+.nav__close:hover {
+    opacity: 0.9;
+}
+
+.nav__close-icon {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    text-align: center;
+}
+
+.nav__items {
+    line-height: 48px;
+}
+
+.nav__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
 }
 
 /* CAROUSEL  */

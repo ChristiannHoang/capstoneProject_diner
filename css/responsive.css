@@ -14,7 +14,10 @@
 }
 
 @media screen and (max-width: 767.98px) {
-    
+    /* CAROUSEL  */
+    .nav__link {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 600px) {
