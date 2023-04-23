@@ -188,10 +188,17 @@ header {
     font-size: 48px;
     line-height: 58px;
     font-weight: 600;
+    transition: all .5s;
 }
 
 .carousel__text {
     line-height: 28px;
+    transition: all .5s;
+}
+
+.carousel__text.dark-mode,
+.carousel__title.dark-mode {
+    color: #232121;
 }
 
 .carousel__btn {
@@ -204,9 +211,57 @@ header {
     text-decoration: none;
 }
 
+.carousel__btn.dark-mode {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
 .carousel__btn:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
+}
+
+/* FIND US  */
+.section__heading h3.heading-dark-mode {
+    color: #eee;
+}
+
+.contact__icon {
+    color: var(--primary-color);
+    font-size: 18px;
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.contact__item h5 {
+    font-size: 20px;
+    color: #232121;
+    font-weight: 600;
+}
+
+.contact__item h5.heading-dark-mode {
+    color: #eee;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 18px;
+}
+
+.contact__link:hover {
+    text-decoration: underline;
+}
+
+.contact__link.text-dark-mode {
+    color: #c2d0da;
+}
+
+.findUs_map {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
 }
 
 /* FOOTER  */

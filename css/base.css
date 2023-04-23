@@ -16,3 +16,21 @@
 html, body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.bg-dark-mode {
+    background-color: var(--dark-color);
+}
+
+.section__heading h6 {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.section__heading h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+}

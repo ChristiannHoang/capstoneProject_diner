@@ -12,6 +12,12 @@
         font-size: 40px;
     }
 
+    /* FIND US */
+    .findUs .section__heading h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
     /* FOOTER  */
     .footer__brand {
         margin-bottom: 4px;
@@ -37,6 +43,15 @@
     /* HEADER  */
     .header__search {
         display: none;
+    }
+
+    /* FIND US */
+    .findUs .section__heading h6 {
+        font-size: 16px;
+    }
+
+    .findUs .section__heading h3 {
+        font-size: 30px;
     }
 }
 
@@ -70,5 +85,16 @@
     /* CAROUSEL  */
     .carousel__btn {
         padding: 10px 21px;
+    }
+
+    .section__heading h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* CAROUSEL  */
+    .section__heading h3 {
+        font-size: 24px;
     }
 }
