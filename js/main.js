@@ -1,52 +1,48 @@
-// HEADER 
-
-    // --HEADER DARK MODE 
+// --HEADER DARK MODE 
 function darkMode() {
-    // HEADER 
-    document.querySelector('.form__input').style.background = '#232220';
-    document.querySelector('.form__input').style.color = '#fff';
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
-
+    // HEADER 
+    document.querySelector('.form__input').classList.add('dark-mode');
+    document.querySelector('.header__brand').classList.add('dark-mode');
+    document.querySelector('.header__bar-icon').classList.add('dark-mode');
+    
     // FOOTER 
     var footerIcon = document.querySelectorAll('.footer__icon-item');
-    for (var i = 0 ; i < footerIcon.length; i++) {
-        console.log(footerIcon[i]);
-        footerIcon[i].style.background = '#232220';
+    footerIconLength = footerIcon.length;
+    for (var i = 0; i < footerIconLength; i++) {
+        footerIcon[i].classList.add('dark-mode');
     }
-    // HOVER ICON DARKMODE? 
 
-    var footerInput = document.querySelector('.footer__sub .form__control').style.background = '#232220';
-    var footerInput = document.querySelector('.footer__sub .form__control').style.color = '#fff';
+    document.querySelector('.footer__sub .form__control').classList.add('dark-mode');
 }
 
 function lightMode() {
-    // HEADER 
-    document.querySelector('.form__input').style.background = '#fff';
-    document.querySelector('.form__input').style.color = 'rgba(22, 28, 45, 0.7)';
     document.querySelector('.header__light-icon').style.display = 'none';
     document.querySelector('.header__dark-icon').style.display = 'block';
-
-    // FOOTER 
+    // HEADER 
+    document.querySelector('.form__input').classList.remove('dark-mode');
+    document.querySelector('.header__brand').classList.remove('dark-mode');
+    document.querySelector('.header__bar-icon').classList.remove('dark-mode');
+    
+    // FOOTER
     var footerIcon = document.querySelectorAll('.footer__icon-item');
-    for (var i = 0 ; i < footerIcon.length; i++) {
-        console.log(footerIcon[i]);
-        footerIcon[i].style.background = '#fff';
-    }
-    // HOVER ICON LIGHTMODE? 
+    footerIconLength = footerIcon.length;
+    for (var i = 0; i < footerIconLength; i++) {
+        footerIcon[i].classList.remove('dark-mode');
+    } 
 
-    var footerInput = document.querySelector('.footer__sub .form__control').style.background = '#fff';
-    var footerInput = document.querySelector('.footer__sub .form__control').style.color = '#000';
+    document.querySelector('.footer__sub .form__control').classList.remove('dark-mode');
 }
 
 document.querySelector('.header__dark-icon').onclick = darkMode;
 document.querySelector('.header__light-icon').onclick = lightMode;
-    
-    // --HEADER OPEN NAV 
-document.querySelector('.header__bar').onclick = function() {
+
+// --HEADER OPEN NAV 
+document.querySelector('.header__bar').onclick = function () {
     document.querySelector('.header__nav').style.display = 'flex';
 }
 
-document.querySelector('.nav__close').onclick = function() {
+document.querySelector('.nav__close').onclick = function () {
     document.querySelector('.header__nav').style.display = 'none';
 }

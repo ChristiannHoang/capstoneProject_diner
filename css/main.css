@@ -16,6 +16,11 @@ header {
     font-weight: 700;
     text-decoration: none;
     color: var(--white-color);
+    transition: all .5s;
+}
+
+.header__brand.dark-mode {
+    color: var(--dark-color);
 }
 
 .header__search .form__input {
@@ -25,6 +30,12 @@ header {
     border: 2px solid transparent;
     transition: all .5s;
     color: rgba(22, 28, 45, 0.7);
+}
+
+.footer__sub .form__control.dark-mode,
+.header__search .form__input.dark-mode {
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 
 .header__search .form__input:hover,
@@ -53,6 +64,10 @@ header {
     display: none;
 }
 
+.header__light-icon {
+    color: var(--dark-color);
+}
+
 .header__bar {
     cursor: pointer;
 }
@@ -61,6 +76,10 @@ header {
     font-size: 28px;
     color: var(--white-color);
     transition: all .5s;
+}
+
+.header__bar-icon.dark-mode {
+    color: var(--dark-color);
 }
 
 .header__bar:hover .header__bar-icon,
@@ -103,6 +122,7 @@ header {
     border: none;
 }
 
+
 .nav__close:hover {
     opacity: 0.9;
 }
@@ -115,6 +135,11 @@ header {
     height: 40px;
     border-radius: 6px;
     text-align: center;
+    border: 2px solid transparent;
+}
+
+.nav__close-icon:active {
+    border-color: var(--white-color);
 }
 
 .nav__list {
@@ -248,6 +273,10 @@ footer {
     text-align: center;
     margin-right: 10px;
     transition: all .5s;
+}
+
+.footer__icon-item.dark-mode {
+    background-color: var(--dark-color);
 }
 
 .footer__icon-item:hover {
