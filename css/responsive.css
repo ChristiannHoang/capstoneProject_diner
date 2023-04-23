@@ -33,6 +33,24 @@
         font-size: 28px;
         line-height: 38px;
     }
+
+    /* FOOTER  */
+    .footer__brand,
+    .footer__title {
+        margin-bottom: 8px;
+    }
+
+    .footer__sub .form__control {
+        font-size: 14px;
+    }
+
+    .footer__btn {
+        font-size: 14px;
+    }
+
+    .footer__bottom-content {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {

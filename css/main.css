@@ -299,7 +299,7 @@ footer {
 .footer__bottom-content a {
     text-decoration: none;
     color: var(--primary-color);
-    transition: all .5s;
+    transition: all .5s`;
 }
 
 .footer__bottom-content a:hover {
