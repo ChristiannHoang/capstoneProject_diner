@@ -11,6 +11,19 @@
     .carousel__title {
         font-size: 40px;
     }
+
+    /* FOOTER  */
+    .footer__brand {
+        margin-bottom: 4px;
+    }
+
+    .footer__title {
+        margin-bottom: 8px;
+    }
+
+    .footer__icon {
+        margin-top: 16px;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -32,6 +45,24 @@
     .carousel__title {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    /* FOOTER  */
+    .footer__brand,
+    .footer__title {
+        margin-bottom: 8px;
+    }
+
+    .footer__sub .form__control {
+        font-size: 14px;
+    }
+
+    .footer__btn {
+        font-size: 14px;
+    }
+
+    .footer__bottom-content {
+        font-size: 14px;
     }
 }
 
