@@ -13,7 +13,7 @@ function darkMode() {
 
     // CONTACT 
     document.querySelector('.contact').classList.add('bg-dark-mode');
-    document.querySelector('.section__heading h3').style.color = '#eee';
+    document.querySelector('.contact .section__heading h3').style.color = '#eee';
     document.querySelector('.contact .section__heading p').style.color = '#c2d0da';
     var contactFormControl = document.querySelectorAll('.contact .form__control');
     for (var i = 0; i < contactFormControl.length; i++) {
@@ -58,7 +58,7 @@ function lightMode() {
 
     // CONTACT 
     document.querySelector('.contact').classList.remove('bg-dark-mode');
-    document.querySelector('.section__heading h3').style.color = '#232121';
+    document.querySelector('.contact .section__heading h3').style.color = '#232121';
     document.querySelector('.contact .section__heading p').style.color = '#161c2db3';
     var contactFormControl = document.querySelectorAll('.contact .form__control');
     for (var i = 0; i < contactFormControl.length; i++) {
