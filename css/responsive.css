@@ -59,10 +59,25 @@
 }
 
 @media screen and (max-width: 767.98px) {
+    /* GLOBAL  */
+    .section__heading h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
 
     /* CAROUSEL  */
     .nav__link {
         font-size: 16px;
+    }
+
+    /* FEEDBACK  */
+    .feedback__item .quote-heading {
+        font-size: 22px;
+    }
+
+    .feedback__item .quote-text {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
 
@@ -90,6 +105,12 @@
 
     .carousel__btn {
         padding: 10px 21px;
+    }
+
+    /* FEEDBACK  */
+    .feedback__item .quote-heading {
+        font-size: 20px;
+        line-height: 30px;
     }
 
     /* CONTACT  */
