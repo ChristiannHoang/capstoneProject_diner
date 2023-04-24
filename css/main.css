@@ -23,25 +23,14 @@ header {
     color: var(--dark-color);
 }
 
-.header__search .form__input {
-    padding: 10px 50px 10px 20px;
-    border-radius: 6px;
-    outline: none;
+.form__control {
     border: 2px solid transparent;
-    transition: all .5s;
-    color: rgba(22, 28, 45, 0.7);
 }
 
 .footer__sub .form__control.dark-mode,
-.header__search .form__input.dark-mode {
+.header__search .form__control.dark-mode {
     background-color: var(--dark-color);
     color: var(--white-color);
-}
-
-.header__search .form__input:hover,
-.header__search .form__input:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 5px var(--primary-color);
 }
 
 .header__search-icon {
@@ -221,9 +210,58 @@ header {
     color: var(--primary-color);
 }
 
+/* CONTACT   */
+.contact .section__heading p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+.contact__form .row:first-child {
+    margin-bottom: 20px;
+}
+
+.contact .form__control {
+    padding: 12px 20px;
+    background-color: #f7f7f7;
+    font-size: 18px;
+}
+
+.contact .form__control.dark-mode {
+    background-color: #282828;
+    color: var(--dark-text-color);
+}
+
+.contact .form__control:hover {
+    border-color: transparent;
+}
+
+.contact .form__control:focus {
+    background-color: var(--white-color);
+    border-color: var(--primary-color);
+}
+
+.contact .dark-mode.form__control:focus {
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+.contact .primary-btn:active,
+.footer__sub .primary-btn:active {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: #5933b6;
+}
+
+
+.contact .text-area {
+    resize: none;
+    min-height: 200px;
+}
+
 /* FIND US  */
 .section__heading h3.heading-dark-mode {
-    color: #eee;
+    color: var(--dark-heading-color);
 }
 
 .contact__icon {
@@ -241,7 +279,7 @@ header {
 }
 
 .contact__item h5.heading-dark-mode {
-    color: #eee;
+    color: var(--dark-heading-color);
 }
 
 .contact__link {
@@ -255,7 +293,7 @@ header {
 }
 
 .contact__link.text-dark-mode {
-    color: #c2d0da;
+    color: var(--dark-text-color);
 }
 
 .findUs_map {
@@ -351,22 +389,7 @@ footer {
     border-color: var(--primary-color);
 }
 
-.footer__btn {  
-    font-size: 16px;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    font-weight: 700;
-    padding: 12px 45px;
-    transition: all .5s;
-}
-
-.footer__btn:hover {
-    opacity: 0.8;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
-.footer__sub .footer__btn:active {
+.footer__sub .primary-btn:active {
     color: var(--white-color);
     background-color: var(--primary-color);
     border-color: #5933b6;
@@ -374,6 +397,7 @@ footer {
 
 .footer__bottom {
     padding: 20px 0;
+    border-top: 1px solid rgb(255 255 255 / 5%);
 }
 
 .footer__bottom-content {

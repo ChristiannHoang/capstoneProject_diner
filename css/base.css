@@ -2,7 +2,10 @@
     --primary-color: #ff6600;
     --black-color: #000;
     --white-color: #fff;
+    --text-color: #161c2db3;
     --dark-color: #232220;
+    --dark-heading-color: #eee;
+    --dark-text-color: #c2d0da; 
 }
 
 * {
@@ -16,6 +19,10 @@
 html, body {
     font-family: 'Quicksand', sans-serif;
 }
+/* 
+.dark-mode {
+    color: var(--dark-color);
+} */
 
 .bg-dark-mode {
     background-color: var(--dark-color);
@@ -34,3 +41,34 @@ html, body {
     font-weight: 600;
     line-height: 48px;
 }
+
+.primary-btn {  
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: 700;
+    padding: 12px 45px;
+    transition: all .5s;
+    border: 2px solid transparent;
+}
+
+.primary-btn:hover {
+    opacity: 0.8;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.form__control {
+    padding: 10px 50px 10px 20px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all .2s;
+    color: var(--text-color);
+}
+
+.form__control:hover,
+.form__control:focus {
+    border-color: var(--primary-color);
+}
+

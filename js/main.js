@@ -3,13 +3,22 @@ function darkMode() {
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
     // HEADER 
-    document.querySelector('.form__input').classList.add('dark-mode');
+    document.querySelector('.form__control').classList.add('dark-mode');
     document.querySelector('.header__brand').classList.add('dark-mode');
     document.querySelector('.header__bar-icon').classList.add('dark-mode');
     
     // CAROUSEL 
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
+
+    // CONTACT 
+    document.querySelector('.contact').classList.add('bg-dark-mode');
+    document.querySelector('.section__heading h3').style.color = '#eee';
+    document.querySelector('.contact .section__heading p').style.color = '#c2d0da';
+    var contactFormControl = document.querySelectorAll('.contact .form__control');
+    for (var i = 0; i < contactFormControl.length; i++) {
+        contactFormControl[i].classList.add('dark-mode');
+    }
 
     // FIND US 
     document.querySelector('.findUs').classList.add('bg-dark-mode');
@@ -38,7 +47,7 @@ function lightMode() {
     document.querySelector('.header__dark-icon').style.display = 'block';
     
     // HEADER 
-    document.querySelector('.form__input').classList.remove('dark-mode');
+    document.querySelector('.form__control').classList.remove('dark-mode');
     document.querySelector('.header__brand').classList.remove('dark-mode');
     document.querySelector('.header__bar-icon').classList.remove('dark-mode');
 
@@ -46,6 +55,15 @@ function lightMode() {
     document.querySelector('.carousel__title').classList.remove('dark-mode');
     document.querySelector('.carousel__text').classList.remove('dark-mode');
     document.querySelector('.carousel__btn').classList.remove('dark-mode');
+
+    // CONTACT 
+    document.querySelector('.contact').classList.remove('bg-dark-mode');
+    document.querySelector('.section__heading h3').style.color = '#232121';
+    document.querySelector('.contact .section__heading p').style.color = '#161c2db3';
+    var contactFormControl = document.querySelectorAll('.contact .form__control');
+    for (var i = 0; i < contactFormControl.length; i++) {
+        contactFormControl[i].classList.remove('dark-mode');
+    }
 
     // FIND US
     document.querySelector('.findUs').classList.remove('bg-dark-mode');
