@@ -6,7 +6,7 @@ function darkMode() {
     document.querySelector('.form__control').classList.add('dark-mode');
     document.querySelector('.header__brand').classList.add('dark-mode');
     document.querySelector('.header__bar-icon').classList.add('dark-mode');
-    
+
     // CAROUSEL 
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
@@ -18,6 +18,20 @@ function darkMode() {
     var contactFormControl = document.querySelectorAll('.contact .form__control');
     for (var i = 0; i < contactFormControl.length; i++) {
         contactFormControl[i].classList.add('dark-mode');
+    }
+
+    // FEEDBACK 
+    document.querySelector('.feedback').classList.add('dark-mode');
+    document.querySelector('.feedback .section__heading h3').style.color = '#eee';
+    var quoteHeading = document.querySelectorAll('.feedback__item .quote-heading');
+    var quoteText = document.querySelectorAll('.feedback__item .quote-text');
+    var peopleName = document.querySelectorAll('.people-infor h3');
+    var peopleJob = document.querySelectorAll('.people-infor p');
+    for (var i = 0; i < quoteHeading.length; i++) {
+        quoteHeading[i].style.color = '#eee';
+        quoteText[i].style.color = '#c2d0da';
+        peopleName[i].style.color = '#eee';
+        peopleJob[i].style.color = '#c2d0da';
     }
 
     // FIND US 
@@ -45,7 +59,7 @@ function darkMode() {
 function lightMode() {
     document.querySelector('.header__light-icon').style.display = 'none';
     document.querySelector('.header__dark-icon').style.display = 'block';
-    
+
     // HEADER 
     document.querySelector('.form__control').classList.remove('dark-mode');
     document.querySelector('.header__brand').classList.remove('dark-mode');
@@ -65,6 +79,11 @@ function lightMode() {
         contactFormControl[i].classList.remove('dark-mode');
     }
 
+    // FEEDBACK 
+    document.querySelector('.feedback').classList.remove('dark-mode');
+    document.querySelector('.feedback .section__heading h3').style.color = '#232121';
+    document.querySelector('.feedback .section__heading p').style.color = '#161c2db3';
+
     // FIND US
     document.querySelector('.findUs').classList.remove('bg-dark-mode');
     document.querySelector('.findUs .section__heading h3').classList.remove('heading-dark-mode');
@@ -82,7 +101,7 @@ function lightMode() {
     footerIconLength = footerIcon.length;
     for (var i = 0; i < footerIconLength; i++) {
         footerIcon[i].classList.remove('dark-mode');
-    } 
+    }
 
     document.querySelector('.footer__sub .form__control').classList.remove('dark-mode');
 }
@@ -98,3 +117,19 @@ document.querySelector('.header__bar').onclick = function () {
 document.querySelector('.nav__close').onclick = function () {
     document.querySelector('.header__nav').style.display = 'none';
 }
+
+// OWL CAROUSEL
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
