@@ -187,7 +187,7 @@ header {
 
 .carousel__text.dark-mode,
 .carousel__title.dark-mode {
-    color: #232121;
+    color: var(--heading-color);
 }
 
 .carousel__btn {
@@ -208,6 +208,67 @@ header {
 .carousel__btn:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
+}
+
+/* FEEDBACK  */
+.feedback {
+
+}
+.feedback .carousel-item {
+    height: 100vh;
+}
+
+.feedback .carousel-caption {
+    height: 100vh;
+    color: black;
+    max-width: 700px;
+}
+
+.feedback .carousel-caption img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.feedback .carousel-caption .quote-icon {
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+.feedback .carousel-caption .quote-heading {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.feedback .carousel-caption .quote-text {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.people-infor h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.people-infor p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.feedback #carousel button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    margin: 1px 6px;
+}
+
+.feedback #carousel button.active {
+    background-color: var(--primary-color);
 }
 
 /* CONTACT   */
@@ -260,11 +321,11 @@ header {
 }
 
 /* FIND US  */
-.section__heading h3.heading-dark-mode {
+.findUs .section__heading h3.heading-dark-mode {
     color: var(--dark-heading-color);
 }
 
-.contact__icon {
+.findUs .contact__icon {
     color: var(--primary-color);
     font-size: 18px;
     width: 20px;
@@ -272,27 +333,27 @@ header {
     margin-top: 5px;
 }
 
-.contact__item h5 {
+.findUs .contact__item h5 {
     font-size: 20px;
-    color: #232121;
+    color: var(--heading-color);
     font-weight: 600;
 }
 
-.contact__item h5.heading-dark-mode {
+.findUs .contact__item h5.heading-dark-mode {
     color: var(--dark-heading-color);
 }
 
-.contact__link {
+.findUs .contact__link {
     text-decoration: none;
     color: rgba(22, 28, 45, 0.7);
     font-size: 18px;
 }
 
-.contact__link:hover {
+.findUs .contact__link:hover {
     text-decoration: underline;
 }
 
-.contact__link.text-dark-mode {
+.findUs .contact__link.text-dark-mode {
     color: var(--dark-text-color);
 }
 
