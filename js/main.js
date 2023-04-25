@@ -2,6 +2,7 @@
 function darkMode() {
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
+    var sectionHeadingh3 = document.querySelectorAll('.section__heading h3');
     // HEADER 
     document.querySelector('.form__control').classList.add('dark-mode');
     document.querySelector('.header__brand').classList.add('dark-mode');
@@ -11,10 +12,20 @@ function darkMode() {
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
 
+    // BLOG 
+    document.querySelector('.blog').style.background = '#282828';
+    var blogCardTitleList = document.querySelectorAll('.post__card .card-title');
+    var blogCardLink = document.querySelectorAll('.card__autor-link');
+    for (var i = 0; i < blogCardTitleList.length; i++) {
+        blogCardTitleList[i].style.color = '#eee';
+        blogCardLink[i].style.color = '#eee';
+    }
+    for (var i = 0; i < blogCardLink.length; i++) {
+        blogCardLink[i].style.color = '#eee';
+    }
+
     // CONTACT 
     document.querySelector('.contact').classList.add('bg-dark-mode');
-    document.querySelector('.contact .section__heading h3').style.color = '#eee';
-    document.querySelector('.contact .section__heading p').style.color = '#c2d0da';
     var contactFormControl = document.querySelectorAll('.contact .form__control');
     for (var i = 0; i < contactFormControl.length; i++) {
         contactFormControl[i].classList.add('dark-mode');
@@ -22,7 +33,6 @@ function darkMode() {
 
     // FEEDBACK 
     document.querySelector('.feedback').classList.add('dark-mode');
-    document.querySelector('.feedback .section__heading h3').style.color = '#eee';
     var quoteHeading = document.querySelectorAll('.feedback__item .quote-heading');
     var quoteText = document.querySelectorAll('.feedback__item .quote-text');
     var peopleName = document.querySelectorAll('.people-infor h3');
@@ -36,7 +46,6 @@ function darkMode() {
 
     // FIND US 
     document.querySelector('.findUs').classList.add('bg-dark-mode');
-    document.querySelector('.findUs .section__heading h3').classList.add('heading-dark-mode');
     var findUsHeading = document.querySelectorAll('.findUs .contact__item h5');
     var findUsLink = document.querySelectorAll('.findUs .contact__link');
     for (var i = 0; i < findUsHeading.length; i++) {
