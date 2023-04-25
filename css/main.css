@@ -88,7 +88,6 @@ header {
     justify-content: center;
     align-items: center;
     animation: navFadeIn .2s linear;
-    /* CHỈNH NÓ FADE OUT NHƯ NÀO NHỈ?  */
 }
 
 @keyframes navFadeIn {
@@ -258,6 +257,10 @@ header {
 .people-infor p {
     font-size: 18px;
     color: var(--text-color);
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    transition: all .5s;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
