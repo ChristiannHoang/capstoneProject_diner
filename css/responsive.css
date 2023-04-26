@@ -144,6 +144,25 @@
         line-height: 38px;
     }
 
+    /* CATEGORIES  */
+    .categories__content {
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+
+    .categories__link {
+        padding: 0 8px;
+    }
+
+    .categories__text h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .categories__text p {
+        margin-top: 0;
+    }
+
     /* WELLCOME  */
     .wellcome .btn {
         font-size: 14px;
