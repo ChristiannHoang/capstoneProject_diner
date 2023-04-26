@@ -32,6 +32,11 @@
         line-height: 50px;
     }
 
+    /* VIDEO  */
+    .video .video__number {
+        margin-top: 0;
+    }
+
     /* BLOG  */
     .post__card .card-title {
         font-size: 20px;
@@ -107,6 +112,11 @@
     .carousel__title {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    /* VIDEO  */
+    .video .counter {
+        font-size: 32px;
     }
 
     .carousel__btn {

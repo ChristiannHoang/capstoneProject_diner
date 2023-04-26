@@ -6,7 +6,7 @@ function darkMode() {
     for (var i = 0; i < sectionHeadingh3.length; i++) {
         sectionHeadingh3[i].style.color = "#eee";
     }
-    
+
     // HEADER 
     document.querySelector('.form__control').classList.add('dark-mode');
     document.querySelector('.header__brand').classList.add('dark-mode');
@@ -15,6 +15,19 @@ function darkMode() {
     // CAROUSEL 
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
+
+    // VIDEO
+    var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
+    for (var i = 0; i < videoBgDarkMode.length; i++) {
+        videoBgDarkMode[i].style.background = '#232220';
+    }
+
+    var counterNumber = document.querySelectorAll('.video .counter');
+    var counterName = document.querySelectorAll('.video .number__name');
+    for (var i = 0; i < counterNumber.length; i++) {
+        counterNumber[i].style.color = '#eee';
+        counterName[i].style.color = '#c2d0da';
+    }
 
     // BLOG 
     document.querySelector('.blog').style.background = '#282828';
@@ -87,6 +100,10 @@ function lightMode() {
     document.querySelector('.carousel__title').classList.remove('dark-mode');
     document.querySelector('.carousel__text').classList.remove('dark-mode');
     document.querySelector('.carousel__btn').classList.remove('dark-mode');
+
+    // VIDEO
+    var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
+    console.log(videoBgDarkMode);
 
     // BLOG 
     document.querySelector('.blog').style.background = '#f7f7f7';
@@ -169,3 +186,14 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// VENOBOX 
+new VenoBox({
+    selector: ".my-video"
+});
+
+// COUNTER 
+$('.counter').countUp({
+    'time': 2000,
+    'delay': 20
+});
