@@ -29,6 +29,8 @@ html, body {
     background-color: var(--dark-color);
 }
 
+
+/* HEADING LAYOUT  */
 .section__heading h6 {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
@@ -43,6 +45,7 @@ html, body {
     line-height: 48px;
 }
 
+/* BUTTON  */
 .primary-btn {  
     font-size: 16px;
     color: var(--white-color);
@@ -59,6 +62,34 @@ html, body {
     background-color: var(--primary-color);
 }
 
+.secondary__btn {
+    padding: 12px 45px;
+    border-radius: 6px;
+    border: 2px solid var(--white-color);
+    font-weight: 700;
+    color: var(--white-color);
+    transition: all .5s;
+    text-decoration: none;
+}
+
+.secondary__btn.dark-mode {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+.dark-mode.secondary__btn:hover {
+    background-color: transparent;
+    border-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.secondary__btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+
+/* FORM  */
 .form__control {
     padding: 10px 50px 10px 20px;
     border-radius: 6px;

@@ -189,31 +189,6 @@ header {
     color: var(--heading-color);
 }
 
-.carousel__btn {
-    padding: 12px 45px;
-    border-radius: 6px;
-    border: 2px solid var(--white-color);
-    font-weight: 700;
-    color: var(--white-color);
-    transition: all .5s;
-    text-decoration: none;
-}
-
-.carousel__btn.dark-mode {
-    border: 2px solid var(--dark-color);
-    color: var(--dark-color);
-}
-
-.dark-mode.carousel__btn:hover {
-    background-color: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color);
-}
-
-.carousel__btn:hover {
-    background-color: var(--white-color);
-    color: var(--primary-color);
-}
 
 /* WELLCOME  */
 .wellcome {
@@ -294,8 +269,7 @@ header {
     min-height: 500px;
     display: block;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background-position: center;
     border-radius: 6px;
     position: relative;
     text-decoration: none;
@@ -324,6 +298,13 @@ header {
     text-align: center;
     line-height: 80px;
     animation: ripple 1s linear infinite;
+    transition: all .3s ease-in-out;
+}
+
+.video__play-icon:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 @keyframes ripple {
