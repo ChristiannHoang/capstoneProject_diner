@@ -21,6 +21,21 @@ function darkMode() {
     for (var i = 0; i < sectionDarkMode28.length; i++) {
         sectionDarkMode28[i].style.background = '#282828';
     }
+    // FEATURES - Chuẩn cả project
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
+    for (var i = 0; i < bgDarkMode23.length; i++) {
+        bgDarkMode23[i].style.background = '#232220';
+    }
+
+    var darkHeading = document.querySelectorAll('.darkHeading');
+    for (var i = 0; i < darkHeading.length; i++) {
+        darkHeading[i].style.color = '#eee';
+    }
+
+    var darkText = document.querySelectorAll('.darkText');
+    for (var i = 0; i < darkText.length; i++) {
+        darkText[i].style.color = '#c2d0da';
+    }
 
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
@@ -111,6 +126,21 @@ function lightMode() {
     var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
     for (var i = 0; i < sectionDarkMode28.length; i++) {
         sectionDarkMode28[i].style.background = '#f7f7f7';
+    }
+    // FEATURES - Chuẩn cả project
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
+    for (var i = 0; i < bgDarkMode23.length; i++) {
+        bgDarkMode23[i].style.background = '#fff';
+    }
+
+    var darkHeading = document.querySelectorAll('.darkHeading');
+    for (var i = 0; i < darkHeading.length; i++) {
+        darkHeading[i].style.color = '#232121';
+    }
+
+    var darkText = document.querySelectorAll('.darkText');
+    for (var i = 0; i < darkText.length; i++) {
+        darkText[i].style.color = '#161c2db3';
     }
 
     // VIDEO

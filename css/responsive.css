@@ -39,6 +39,15 @@
         left: 24px;
         bottom: 12px;
     }
+    /* FEATURES  */
+    .features__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features__card-name {
+        font-size: 20px;
+    }
+
 
     /* CAROUSEL  */
     .myCarousel {
@@ -153,8 +162,16 @@
     .categories__link {
         padding: 0 8px;
     }
+    /* FEATURES  */
+    .features__list {
+        grid-template-columns: 1fr;
+    }
 
-    .categories__text h4 {
+    .features .card-body {
+        padding: 30px;
+    }
+
+    .features__card-number, .features .card-text {
         font-size: 16px;
         line-height: 26px;
     }
@@ -174,7 +191,7 @@
         font-size: 32px;
     }
 
-    .carousel__btn {
+    .secondary__btn {
         padding: 10px 21px;
     }
 
