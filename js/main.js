@@ -80,7 +80,7 @@ function darkMode() {
         footerIcon[i].classList.add('dark-mode');
     }
     document.querySelector('.footer__sub .form__control').classList.add('dark-mode');
-    document.querySelector('.carousel__btn').classList.add('dark-mode');
+    document.querySelector('.secondary__btn').classList.add('dark-mode');
 }
 
 function lightMode() {
@@ -99,7 +99,7 @@ function lightMode() {
     // CAROUSEL 
     document.querySelector('.carousel__title').classList.remove('dark-mode');
     document.querySelector('.carousel__text').classList.remove('dark-mode');
-    document.querySelector('.carousel__btn').classList.remove('dark-mode');
+    document.querySelector('.secondary__btn').classList.remove('dark-mode');
 
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
