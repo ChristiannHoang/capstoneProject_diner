@@ -16,6 +16,22 @@ function darkMode() {
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
 
+    // FEATURES - Chuẩn cả project
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
+    for (var i = 0; i < bgDarkMode23.length; i++) {
+        bgDarkMode23[i].style.background = '#232220';
+    }
+
+    var darkHeading = document.querySelectorAll('.darkHeading');
+    for (var i = 0; i < darkHeading.length; i++) {
+        darkHeading[i].style.color = '#eee';
+    }
+
+    var darkText = document.querySelectorAll('.darkText');
+    for (var i = 0; i < darkText.length; i++) {
+        darkText[i].style.color = '#c2d0da';
+    }
+
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
     for (var i = 0; i < videoBgDarkMode.length; i++) {
@@ -80,7 +96,7 @@ function darkMode() {
         footerIcon[i].classList.add('dark-mode');
     }
     document.querySelector('.footer__sub .form__control').classList.add('dark-mode');
-    document.querySelector('.carousel__btn').classList.add('dark-mode');
+    document.querySelector('.secondary__btn').classList.add('dark-mode');
 }
 
 function lightMode() {
@@ -99,11 +115,26 @@ function lightMode() {
     // CAROUSEL 
     document.querySelector('.carousel__title').classList.remove('dark-mode');
     document.querySelector('.carousel__text').classList.remove('dark-mode');
-    document.querySelector('.carousel__btn').classList.remove('dark-mode');
+    document.querySelector('.secondary__btn').classList.remove('dark-mode');
+
+    // FEATURES - Chuẩn cả project
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
+    for (var i = 0; i < bgDarkMode23.length; i++) {
+        bgDarkMode23[i].style.background = '#fff';
+    }
+
+    var darkHeading = document.querySelectorAll('.darkHeading');
+    for (var i = 0; i < darkHeading.length; i++) {
+        darkHeading[i].style.color = '#232121';
+    }
+
+    var darkText = document.querySelectorAll('.darkText');
+    for (var i = 0; i < darkText.length; i++) {
+        darkText[i].style.color = '#161c2db3';
+    }
 
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
-    console.log(videoBgDarkMode);
 
     // BLOG 
     document.querySelector('.blog').style.background = '#f7f7f7';
