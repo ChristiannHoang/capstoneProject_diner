@@ -16,6 +16,12 @@ function darkMode() {
     document.querySelector('.carousel__title').classList.add('dark-mode');
     document.querySelector('.carousel__text').classList.add('dark-mode');
 
+    // CATEGORIES 
+    var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
+    for (var i = 0; i < sectionDarkMode28.length; i++) {
+        sectionDarkMode28[i].style.background = '#282828';
+    }
+
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
     for (var i = 0; i < videoBgDarkMode.length; i++) {
@@ -101,9 +107,14 @@ function lightMode() {
     document.querySelector('.carousel__text').classList.remove('dark-mode');
     document.querySelector('.secondary__btn').classList.remove('dark-mode');
 
+    // CATEGORIES ---------------------APPLY TOÀN PROJECT
+    var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
+    for (var i = 0; i < sectionDarkMode28.length; i++) {
+        sectionDarkMode28[i].style.background = '#f7f7f7';
+    }
+
     // VIDEO
     var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
-    console.log(videoBgDarkMode);
 
     // BLOG 
     document.querySelector('.blog').style.background = '#f7f7f7';

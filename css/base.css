@@ -43,6 +43,11 @@ html, body {
     font-size: 38px;
     font-weight: 600;
     line-height: 48px;
+    margin-bottom: 0;
+}
+
+.categories__text h4 {
+    font-size: 18px;
 }
 
 /* BUTTON  */
