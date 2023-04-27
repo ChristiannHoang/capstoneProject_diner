@@ -154,6 +154,10 @@
     }
 
     /* CAROUSEL  */
+    .carousel__content {
+        max-height: 95vh;
+    }
+
     .carousel__title {
         font-size: 28px;
         line-height: 38px;

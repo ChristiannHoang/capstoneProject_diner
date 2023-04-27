@@ -2,9 +2,28 @@
 function darkMode() {
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
-    var sectionHeadingh3 = document.querySelectorAll('.section__heading h3');
-    for (var i = 0; i < sectionHeadingh3.length; i++) {
-        sectionHeadingh3[i].style.color = "#eee";
+
+    var sectionHeadingh23 = document.querySelectorAll('.section__heading h3');
+    for (var i = 0; i < sectionHeadingh23.length; i++) {
+        sectionHeadingh23[i].style.color = "#eee";
+    }
+
+    // BACKGROUND 23 
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
+    for (var i = 0; i < bgDarkMode23.length; i++) {
+        bgDarkMode23[i].style.background = '#232220';
+    }
+
+    // HEADING 
+    var darkHeading = document.querySelectorAll('.darkHeading');
+    for (var i = 0; i < darkHeading.length; i++) {
+        darkHeading[i].style.color = '#eee';
+    }
+
+    // TEXT 
+    var darkText = document.querySelectorAll('.darkText');
+    for (var i = 0; i < darkText.length; i++) {
+        darkText[i].style.color = '#c2d0da';
     }
 
     // HEADER 
@@ -20,21 +39,6 @@ function darkMode() {
     var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
     for (var i = 0; i < sectionDarkMode28.length; i++) {
         sectionDarkMode28[i].style.background = '#282828';
-    }
-    // FEATURES - Chuẩn cả project
-    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
-    for (var i = 0; i < bgDarkMode23.length; i++) {
-        bgDarkMode23[i].style.background = '#232220';
-    }
-
-    var darkHeading = document.querySelectorAll('.darkHeading');
-    for (var i = 0; i < darkHeading.length; i++) {
-        darkHeading[i].style.color = '#eee';
-    }
-
-    var darkText = document.querySelectorAll('.darkText');
-    for (var i = 0; i < darkText.length; i++) {
-        darkText[i].style.color = '#c2d0da';
     }
 
     // VIDEO

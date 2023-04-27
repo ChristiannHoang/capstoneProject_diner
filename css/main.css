@@ -199,11 +199,6 @@ header {
 }
 
 /* AGENT */
-.agent__content {
-    display: flex;
-
-}
-
 .agent__img {
     background-image: url(../img/banner3.jpg);
     background-repeat: no-repeat;
