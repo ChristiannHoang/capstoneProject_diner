@@ -202,12 +202,27 @@ header {
 .agent {
     background-color: var(--primary-color);
 }
+
+.agent .section__heading h6{
+    color: var(--white-color);
+}
+
 .agent__left {
     background-image: url(../img/banner3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
+    position: relative;
+}
+
+.agent__left .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(16 15 19 / 46%);
 }
 
 .agent__text {

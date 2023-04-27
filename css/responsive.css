@@ -65,6 +65,15 @@
         line-height: 50px;
     }
 
+    /* AGENT  */
+    .agent .row {
+        margin: 0;
+    }
+
+    .agent__left {
+        min-height: 200px;
+    }
+
     /* WELLCOME  */
     .wellcome__title {
         font-size: 40px;
@@ -161,6 +170,20 @@
     .carousel__title {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    /* AGENT  */
+    .agent__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .agent__title {
+        font-size: 18px;
+    }
+
+    .agent__right {
+        margin-top: 24px;
     }
 
     /* ABOUT US  */
