@@ -183,12 +183,16 @@
     /* WELLCOME  */
     .wellcome .btn {
         font-size: 14px;
-        padding: 19px 20px;
+        padding: 10px 20px;
     }
 
     /* VIDEO  */
     .video .counter {
         font-size: 32px;
+    }
+
+    .video__play-link {
+        min-height: 300px;
     }
 
     .secondary__btn {
