@@ -189,6 +189,72 @@ header {
     color: var(--heading-color);
 }
 
+/* About Us */
+.aboutUs__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    padding-left: 48px;
+    padding-right: 15px;
+}
+
+/* AGENT */
+.agent {
+    background-color: var(--primary-color);
+}
+
+.agent .section__heading h6{
+    color: var(--white-color);
+}
+
+.agent__left {
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.agent__left .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(16 15 19 / 46%);
+}
+
+.agent__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white-color)
+}
+
+.agent__icon {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: #ff6610;
+    font-size: 25px;
+    line-height: 70px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.agent__icon:hover {
+    color: rgba(252, 185, 0, 1);
+}
+
+.agent__title {
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
 /* CATEGORIES  */
 .categories {
     background-color: #f7f7f7;
@@ -246,6 +312,72 @@ header {
     margin-top: 8px;
 }
 
+/* FEATURES  */
+.features__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+}
+
+.features__list .card {
+    transition: all .5s;
+    border: 1px solid rgb(238, 238, 238, .1);
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+
+.features__list .card:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.features .card-body {
+    padding: 40px;
+}
+
+.features__card-icon {
+    font-size: 25px;
+    line-height: 70px;
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    background-color: rgba(130, 115, 252, .05);
+    text-align: center;
+    margin-right: 30px;
+    transition: all .5s;
+}
+
+.features__list .card:hover .features__card-icon {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.features__card-number,
+.features .card-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.features__card-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--heading-color);
+    transition: all .5s;
+}
+
+.features .card-text {
+    margin-bottom: 0;
+}
+
+.features__card-name:hover {
+    color: var(--primary-color);
+}
 
 /* WELLCOME  */
 .wellcome {
@@ -254,6 +386,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+/* FIND US  */
+.section__heading h3.heading-dark-mode {
+    color: #eee;
 }
 
 .wellcome__overlay {
