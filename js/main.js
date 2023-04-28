@@ -1,226 +1,105 @@
-// --HEADER DARK MODE 
 function darkMode() {
+    // CHANGE ICON 
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
+    
+    // HEADER DARK MODE 
+    document.querySelector('.header__bar-icon').style.color = '#232220';
 
-    var sectionHeadingh23 = document.querySelectorAll('.section__heading h3');
-    for (var i = 0; i < sectionHeadingh23.length; i++) {
-        sectionHeadingh23[i].style.color = "#eee";
-    }
+    // CAROUSEL DARK MODE 
+    document.querySelector('.carousel__title').style.color = '#232220';
+    document.querySelector('.carousel__text').style.color = '#232220';
 
-    // BACKGROUND 23 
-    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
-    for (var i = 0; i < bgDarkMode23.length; i++) {
+    // BG DARK MODE BOLD 232220
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
+    var bgDarkMode23Length = bgDarkMode23.length;
+    for (var i = 0; i < bgDarkMode23Length; i++) {
         bgDarkMode23[i].style.background = '#232220';
     }
 
-    // HEADING 
-    var darkHeading = document.querySelectorAll('.darkHeading');
-    for (var i = 0; i < darkHeading.length; i++) {
-        darkHeading[i].style.color = '#eee';
+    // BG DARK LIGHT MODE 282828
+    var bgDarkMode28 = document.querySelectorAll('.bgDarkMode28');
+    var bgDarkMode28Length = bgDarkMode28.length;
+    for (var i = 0; i < bgDarkMode28Length; i++) {
+        bgDarkMode28[i].style.background = '#282828';
     }
 
-    // TEXT 
-    var darkText = document.querySelectorAll('.darkText');
-    for (var i = 0; i < darkText.length; i++) {
-        darkText[i].style.color = '#c2d0da';
+    // HEADING EEE
+    var headingDarkColor = document.querySelectorAll('.headingDarkColor');
+    var headingDarkColorLength = headingDarkColor.length;
+    for (var i = 0; i < headingDarkColorLength; i++) {
+        headingDarkColor[i].style.color = '#eee';
     }
 
-    // HEADING HOVER 
-    var darkHeadingHover = document.querySelectorAll('.darkHeadingHover');
-    for (var i = 0; i < darkHeadingHover.length; i++) {
-        darkHeadingHover[i].classList.add('add_darkHeading');
+    // TEXT COLOR C2D0DA
+    var darkTextColor = document.querySelectorAll('.darkTextColor');
+    var darkTextColorLength = darkTextColor.length;
+    for (var i = 0; i < darkTextColorLength; i++) {
+        darkTextColor[i].style.color = '#c2d0da';
     }
 
-    // // TEXT HOVER 
-    // var darkTextHover = document.querySelectorAll('.darkTextHover');
-    // for (var i = 0; i < darkTextHover.length; index++) {
-    //     darkTextHover[index].classList.add('add_darkText');
-    // }
-
-    // HEADER 
-    document.querySelector('.form__control').classList.add('dark-mode');
-    document.querySelector('.header__brand').classList.add('dark-mode');
-    document.querySelector('.header__bar-icon').classList.add('dark-mode');
-
-    // CAROUSEL 
-    document.querySelector('.carousel__title').classList.add('dark-mode');
-    document.querySelector('.carousel__text').classList.add('dark-mode');
-
-    // CATEGORIES 
-    var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
-    for (var i = 0; i < sectionDarkMode28.length; i++) {
-        sectionDarkMode28[i].style.background = '#282828';
+    // BTN SECONDARY DARK 
+    var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
+    for (var i = 0; i < secondaryBtnDark.length; i++) {
+        secondaryBtnDark[i].classList.add('dark-mode');
     }
 
-    // VIDEO
-    var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
-    for (var i = 0; i < videoBgDarkMode.length; i++) {
-        videoBgDarkMode[i].style.background = '#232220';
+    // FORM DARK MODE BOLD 232220
+    var formControl = document.querySelectorAll('.form__control');
+    var formControlLength = formControl.length;
+    for (var i = 0; i < formControlLength; i++) {
+        formControl[i].style.background = '#282828';
+        formControl[i].style.color = '#c2d0da';
     }
-
-    var counterNumber = document.querySelectorAll('.video .counter');
-    var counterName = document.querySelectorAll('.video .number__name');
-    for (var i = 0; i < counterNumber.length; i++) {
-        counterNumber[i].style.color = '#eee';
-        counterName[i].style.color = '#c2d0da';
-    }
-
-    // BLOG 
-    document.querySelector('.blog').style.background = '#282828';
-    var blogCardTitleList = document.querySelectorAll('.post__card .card-title');
-    var blogCardLink = document.querySelectorAll('.card__autor-link');
-    for (var i = 0; i < blogCardTitleList.length; i++) {
-        blogCardTitleList[i].style.color = '#eee';
-        blogCardLink[i].style.color = '#eee';
-    }
-    for (var i = 0; i < blogCardLink.length; i++) {
-        blogCardLink[i].style.color = '#eee';
-    }
-
-    // CONTACT 
-    document.querySelector('.contact').classList.add('bg-dark-mode');
-    document.querySelector('.contact .section__heading p').style.color = '#c2d0da';
-    var contactFormControl = document.querySelectorAll('.contact .form__control');
-    for (var i = 0; i < contactFormControl.length; i++) {
-        contactFormControl[i].classList.add('dark-mode');
-    }
-
-    // FEEDBACK 
-    document.querySelector('.feedback').classList.add('dark-mode');
-    var quoteHeading = document.querySelectorAll('.feedback__item .quote-heading');
-    var quoteText = document.querySelectorAll('.feedback__item .quote-text');
-    var peopleName = document.querySelectorAll('.people-infor h3');
-    var peopleJob = document.querySelectorAll('.people-infor p');
-    for (var i = 0; i < quoteHeading.length; i++) {
-        quoteHeading[i].style.color = '#eee';
-        quoteText[i].style.color = '#c2d0da';
-        peopleName[i].style.color = '#eee';
-        peopleJob[i].style.color = '#c2d0da';
-    }
-
-    // FIND US 
-    document.querySelector('.findUs').classList.add('bg-dark-mode');
-    var findUsHeading = document.querySelectorAll('.findUs .contact__item h5');
-    var findUsLink = document.querySelectorAll('.findUs .contact__link');
-    for (var i = 0; i < findUsHeading.length; i++) {
-        findUsHeading[i].classList.add('heading-dark-mode');
-        findUsLink[i].classList.add('text-dark-mode');
-    }
-    document.querySelector('.findUs_map').style.background = 'transparent';
-    document.querySelector('.findUs_map').style.filter = 'grayscale(100%)';
-
-    // FOOTER 
-    var footerIcon = document.querySelectorAll('.footer__icon-item');
-    footerIconLength = footerIcon.length;
-    for (var i = 0; i < footerIconLength; i++) {
-        footerIcon[i].classList.add('dark-mode');
-    }
-    document.querySelector('.footer__sub .form__control').classList.add('dark-mode');
-    document.querySelector('.secondary__btn').classList.add('dark-mode');
 }
 
 function lightMode() {
-    document.querySelector('.header__light-icon').style.display = 'none';
+    // CHANGE ICON 
     document.querySelector('.header__dark-icon').style.display = 'block';
-    var sectionHeadingh3 = document.querySelectorAll('.section__heading h3');
-    for (var i = 0; i < sectionHeadingh3.length; i++) {
-        sectionHeadingh3[i].style.color = "#232121";
-    }
+    document.querySelector('.header__light-icon').style.display = 'none';
 
-    // HEADING HOVER 
-    var darkHeadingHover = document.querySelectorAll('.darkHeadingHover');
-    for (var i = 0; i < darkHeadingHover.length; i++) {
-        darkHeadingHover[i].classList.remove('add_darkHeading');
-    }
+    // HEADER DARK MODE 
+    document.querySelector('.header__bar-icon').style.color = '#fff';
 
-    // HEADER 
-    document.querySelector('.form__control').classList.remove('dark-mode');
-    document.querySelector('.header__brand').classList.remove('dark-mode');
-    document.querySelector('.header__bar-icon').classList.remove('dark-mode');
+    // CAROUSEL DARK MODE 
+    document.querySelector('.carousel__title').style.color = '#fff';
+    document.querySelector('.carousel__text').style.color = '#fff';
 
-    // CAROUSEL 
-    document.querySelector('.carousel__title').classList.remove('dark-mode');
-    document.querySelector('.carousel__text').classList.remove('dark-mode');
-    document.querySelector('.secondary__btn').classList.remove('dark-mode');
-
-    // CATEGORIES ---------------------APPLY TOÀN PROJECT
-    var sectionDarkMode28 = document.querySelectorAll('.bgDarkMode28');
-    for (var i = 0; i < sectionDarkMode28.length; i++) {
-        sectionDarkMode28[i].style.background = '#f7f7f7';
-    }
-    // FEATURES - Chuẩn cả project
-    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode');
-    for (var i = 0; i < bgDarkMode23.length; i++) {
+    // BG DARK MODE BOLD 232220
+    var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
+    var bgDarkMode23Length = bgDarkMode23.length;
+    for (var i = 0; i < bgDarkMode23Length; i++) {
         bgDarkMode23[i].style.background = '#fff';
     }
 
-    var darkHeading = document.querySelectorAll('.darkHeading');
-    for (var i = 0; i < darkHeading.length; i++) {
-        darkHeading[i].style.color = '#232121';
+    // BG DARK LIGHT MODE 282828
+    var bgDarkMode28 = document.querySelectorAll('.bgDarkMode28');
+    var bgDarkMode28Length = bgDarkMode28.length;
+    for (var i = 0; i < bgDarkMode28Length; i++) {
+        bgDarkMode28[i].style.background = '#f7f7f7';
     }
 
-    var darkText = document.querySelectorAll('.darkText');
-    for (var i = 0; i < darkText.length; i++) {
-        darkText[i].style.color = '#161c2db3';
+    // HEADING EEE
+    var headingDarkColor = document.querySelectorAll('.headingDarkColor');
+    var headingDarkColorLength = headingDarkColor.length;
+    for (var i = 0; i < headingDarkColorLength; i++) {
+        headingDarkColor[i].style.color = '#232121';
     }
 
-    // VIDEO
-    var videoBgDarkMode = document.querySelectorAll('.video .bgDarkMode');
-
-    // BLOG 
-    document.querySelector('.blog').style.background = '#f7f7f7';
-    var blogCardTitleList = document.querySelectorAll('.post__card .card-title');
-    var blogCardLink = document.querySelectorAll('.card__autor-link');
-    for (var i = 0; i < blogCardTitleList.length; i++) {
-        blogCardTitleList[i].style.color = '#232121';
-        blogCardLink[i].style.color = '#232121';
-    }
-    for (var i = 0; i < blogCardLink.length; i++) {
-        blogCardLink[i].style.color = '#232121';
+    // TEXT COLOR 161c2db3
+    var darkTextColor = document.querySelectorAll('.darkTextColor');
+    var darkTextColorLength = darkTextColor.length;
+    for (var i = 0; i < darkTextColorLength; i++) {
+        darkTextColor[i].style.color = '#161c2db3';
     }
 
-    // CONTACT 
-    document.querySelector('.contact').classList.remove('bg-dark-mode');
-    document.querySelector('.contact .section__heading p').style.color = '#161c2db3';
-    var contactFormControl = document.querySelectorAll('.contact .form__control');
-    for (var i = 0; i < contactFormControl.length; i++) {
-        contactFormControl[i].classList.remove('dark-mode');
+    // BTN SECONDARY DARK 
+    var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
+    for (var i = 0; i < secondaryBtnDark.length; i++) {
+        secondaryBtnDark[i].classList.remove('dark-mode');
     }
-
-    // FEEDBACK 
-    document.querySelector('.feedback').classList.remove('dark-mode');
-    var quoteHeading = document.querySelectorAll('.feedback__item .quote-heading');
-    var quoteText = document.querySelectorAll('.feedback__item .quote-text');
-    var peopleName = document.querySelectorAll('.people-infor h3');
-    var peopleJob = document.querySelectorAll('.people-infor p');
-    for (var i = 0; i < quoteHeading.length; i++) {
-        quoteHeading[i].style.color = '#232121';
-        quoteText[i].style.color = '#161c2db3';
-        peopleName[i].style.color = '#232121';
-        peopleJob[i].style.color = '#161c2db3';
-    }
-
-    // FIND US
-    document.querySelector('.findUs').classList.remove('bg-dark-mode');
-    var findUsHeading = document.querySelectorAll('.findUs .contact__item h5');
-    var findUsLink = document.querySelectorAll('.findUs .contact__link');
-    for (var i = 0; i < findUsHeading.length; i++) {
-        findUsHeading[i].classList.remove('heading-dark-mode');
-        findUsLink[i].classList.remove('text-dark-mode');
-    }
-    document.querySelector('.findUs_map').style.background = '#f7f7f7';
-    document.querySelector('.findUs_map').style.filter = 'grayscale(0)';
-
-    // FOOTER
-    var footerIcon = document.querySelectorAll('.footer__icon-item');
-    footerIconLength = footerIcon.length;
-    for (var i = 0; i < footerIconLength; i++) {
-        footerIcon[i].classList.remove('dark-mode');
-    }
-
-    document.querySelector('.footer__sub .form__control').classList.remove('dark-mode');
 }
+
 
 document.querySelector('.header__dark-icon').onclick = darkMode;
 document.querySelector('.header__light-icon').onclick = lightMode;

@@ -22,12 +22,15 @@ html, body {
 }
 
 /* DARK MODE  */
-.add_darkText {
-    color: var(--dark-text-color) !important;
+.secondary__btn.dark-mode {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
 }
 
-.add_darkHeading {
-    color: var(--dark-heading-color) !important;
+.dark-mode.secondary__btn:hover {
+    background-color: transparent;
+    border-color: var(--white-color);
+    color: var(--white-color);
 }
 
 /* HEADING LAYOUT  */
@@ -44,6 +47,7 @@ html, body {
     font-weight: 600;
     line-height: 48px;
     margin-bottom: 0;
+    color: var(--heading-color);
 }
 
 .categories__text h4 {
@@ -77,17 +81,6 @@ html, body {
     text-decoration: none;
 }
 
-.secondary__btn.dark-mode {
-    border: 2px solid var(--dark-color);
-    color: var(--dark-color);
-}
-
-.dark-mode.secondary__btn:hover {
-    background-color: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color);
-}
-
 .secondary__btn:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
@@ -99,7 +92,7 @@ html, body {
     padding: 10px 50px 10px 20px;
     border-radius: 6px;
     outline: none;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all .2s;
     color: var(--text-color);
 }

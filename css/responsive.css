@@ -264,6 +264,10 @@
         padding: 10px 21px;
     }
 
+    .comtact .form__control {
+        font-size: 16px;
+    }
+
     /* FOOTER  */
     .footer__brand,
     .footer__title {
