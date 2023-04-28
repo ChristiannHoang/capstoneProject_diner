@@ -26,6 +26,18 @@ function darkMode() {
         darkText[i].style.color = '#c2d0da';
     }
 
+    // HEADING HOVER 
+    var darkHeadingHover = document.querySelectorAll('.darkHeadingHover');
+    for (var i = 0; i < darkHeadingHover.length; i++) {
+        darkHeadingHover[i].classList.add('add_darkHeading');
+    }
+
+    // // TEXT HOVER 
+    // var darkTextHover = document.querySelectorAll('.darkTextHover');
+    // for (var i = 0; i < darkTextHover.length; index++) {
+    //     darkTextHover[index].classList.add('add_darkText');
+    // }
+
     // HEADER 
     document.querySelector('.form__control').classList.add('dark-mode');
     document.querySelector('.header__brand').classList.add('dark-mode');
@@ -114,6 +126,12 @@ function lightMode() {
     var sectionHeadingh3 = document.querySelectorAll('.section__heading h3');
     for (var i = 0; i < sectionHeadingh3.length; i++) {
         sectionHeadingh3[i].style.color = "#232121";
+    }
+
+    // HEADING HOVER 
+    var darkHeadingHover = document.querySelectorAll('.darkHeadingHover');
+    for (var i = 0; i < darkHeadingHover.length; i++) {
+        darkHeadingHover[i].classList.remove('add_darkHeading');
     }
 
     // HEADER 
@@ -242,3 +260,5 @@ $('.counter').countUp({
     'time': 2000,
     'delay': 20
 });
+
+

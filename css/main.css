@@ -189,7 +189,7 @@ header {
     color: var(--heading-color);
 }
 
-/* About Us */
+/* ABOUT US */
 .aboutUs__text {
     font-size: 18px;
     line-height: 28px;
@@ -201,10 +201,7 @@ header {
 /* AGENT */
 .agent {
     background-color: var(--primary-color);
-}
-
-.agent .section__heading h6{
-    color: var(--white-color);
+    overflow: hidden;
 }
 
 .agent__left {
@@ -223,6 +220,10 @@ header {
     bottom: 0;
     right: 0;
     background-color: rgb(16 15 19 / 46%);
+}
+
+.agent .section__heading h6 {
+    color: var(--white-color);
 }
 
 .agent__text {
@@ -253,6 +254,65 @@ header {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 15px;
+}
+
+/* TEAM  */
+.team .card-img-top {
+    border-radius: 6px;
+}
+
+.card__social-list {
+    position: absolute;
+    width: 100%;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: 0;
+    transition: all .5s;
+}
+
+.card__heading:hover .card__social-list {
+    opacity: 1;
+    visibility: 1;
+}
+
+.team .card__social-icon {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.team .card__social-icon i {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    background-color: rgba(157, 157, 157, 0.5);
+    line-height: 42px;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+.team .card__social-icon:hover i {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.team .card-title {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--heading-color);
+    transition: all .5s;
+}
+
+.team .card-title:hover {
+    color: var(--primary-color) !important;
+}
+
+.team .card-text {
+    font-size: 18px;
+    color: var(--text-color);
 }
 
 /* CATEGORIES  */

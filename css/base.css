@@ -20,15 +20,15 @@
 html, body {
     font-family: 'Quicksand', sans-serif;
 }
-/* 
-.dark-mode {
-    color: var(--dark-color);
-} */
 
-.bg-dark-mode {
-    background-color: var(--dark-color);
+/* DARK MODE  */
+.add_darkText {
+    color: var(--dark-text-color) !important;
 }
 
+.add_darkHeading {
+    color: var(--dark-heading-color) !important;
+}
 
 /* HEADING LAYOUT  */
 .section__heading h6 {

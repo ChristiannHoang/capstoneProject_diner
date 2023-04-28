@@ -66,8 +66,8 @@
     }
 
     /* AGENT  */
-    .agent .row {
-        margin: 0;
+    .agent__left {
+        margin: 0 8px;
     }
 
     .agent__left {
@@ -127,6 +127,12 @@
     /* CAROUSEL  */
     .nav__link {
         font-size: 16px;
+    }
+
+    /* TEAM  */
+    .team .card-title {
+        font-size: 18px;
+        margin-top: 18px;
     }
 
     /* WELLCOME  */
@@ -257,8 +263,6 @@
     .contact .primary-btn {
         padding: 10px 21px;
     }
-
-    /* FIND US */
 
     /* FOOTER  */
     .footer__brand,
