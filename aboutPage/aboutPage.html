@@ -30,9 +30,106 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <!-- ABOUT US CSS  -->
-    <link rel="stylesheet" href="./aboutPage.css">
-    <link rel="stylesheet" href="./aboutPage__responsive.css">
+
+    <style>
+        /* ABOUT US  */
+        .pageAboutUs__img {
+            border-radius: var(--bd-radius);
+        }
+
+        .pageAboutUs__title,
+        .pageAboutUs .list__title h3 {
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 600;
+        }
+
+        .pageAboutUs__list {
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .pageAboutUs .list__title-link {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all .5s;
+        }
+
+        .pageAboutUs .list__title-link:hover {
+            color: #ffc600;
+        }
+
+        /* SKILL  */
+        .skill {
+            background-color: var(--bg-grey-color);
+        }
+
+        .skill__item h5 {
+            margin-bottom: 10px;
+        }
+
+        .skill__item span {
+            background-color: var(--text-color);
+            border-radius: var(--bd-radius);
+            height: 6px;
+        }
+
+        .skill__item span::before {
+            content: '';
+            display: block;
+            height: 6px;
+            width: 80%;
+            background-color: var(--primary-color);
+        }
+
+        .skill__item:nth-child(2) span::before {
+            width: 95%;
+        }
+
+        .skill__item:nth-child(3) span::before {
+            width: 50%;
+        }
+
+        .skill__img {
+            border-radius: var(--bd-radius);
+        }
+
+        /* ---------------------------- */
+        @media screen and (max-width: 991.98px) {
+            /* PAGE ABOUT US  */
+            .pageAboutUs__list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            /* PAGE ABOUT US  */
+            .pageAboutUs__list {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+
+        @media screen and (max-width: 575.98px) {
+            /* BANNER  */
+            .banner {
+                min-height: 250px;
+            }
+
+            /* PAGE ABOUT US  */
+            .pageAboutUs__img {
+                margin: 24px 0;
+            }
+
+            .pageAboutUs__text p:first-child {
+                margin: 8px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -65,8 +162,8 @@
                         </button>
                         <ul class="nav__list ps-0">
                             <li class="nav__items"><a href="../index.html" class="nav__link">Home</a></li>
-                            <li class="nav__items"><a href="#" class="nav__link">About</a></li>
-                            <li class="nav__items"><a href="#" class="nav__link">Services</a></li>
+                            <li class="nav__items"><a href="./aboutPage.html" class="nav__link">About</a></li>
+                            <li class="nav__items"><a href="../servicesPage/servicesPage.html" class="nav__link">Services</a></li>
                             <li class="nav__items"><a href="#" class="nav__link">Blog Posts</a></li>
                             <li class="nav__items"><a href="#" class="nav__link">404 page</a></li>
                             <li class="nav__items"><a href="#" class="nav__link">Elements</a></li>
@@ -108,10 +205,12 @@
                                     for you.</h3>
                             </div>
                             <div class="primary__text">
-                                <p class="my-sm-4 darkTextColor">Excepteur sint occaecat non proident, sunt in culpa quis.
+                                <p class="my-sm-4 darkTextColor">Excepteur sint occaecat non proident, sunt in culpa
+                                    quis.
                                     Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis
                                     vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia</p>
-                                <p class="mb-sm-4 darkTextColor">Excepteur sint occaecat non proident, sunt in culpa quis.
+                                <p class="mb-sm-4 darkTextColor">Excepteur sint occaecat non proident, sunt in culpa
+                                    quis.
                                     Phasellus lacinia id erat eu ullamcorper.</p>
                             </div>
                             <div class="btn primary-btn mt-1">
@@ -160,7 +259,8 @@
                             <h3 class="headingDarkColor">Strategy is at the Heart of What We Do</h3>
                         </div>
                         <div class="section__body">
-                            <p class="primary__text mt-3 darkTextColor">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                            <p class="primary__text mt-3 darkTextColor">Lorem ipsum viverra feugiat. Pellen tesque
+                                libero ut justo, ultrices in ligula.</p>
                             <ul class="skill__point list-unstyled mt-4">
                                 <li class="skill__item mb-4">
                                     <h5 class="primary__heading headingDarkColor">Digital Strategy</h5>
@@ -327,7 +427,8 @@
                 </div>
                 <div class="row footer__bottom">
                     <div class="col-12 footer__bottom-content text-center text-lg-start">
-                        &copy 2023 Diner. All Rights Reserved | WordPress Theme by <a href="https://w3layouts.com/">W3Layouts.</a>
+                        &copy 2023 Diner. All Rights Reserved | WordPress Theme by <a
+                            href="https://w3layouts.com/">W3Layouts.</a>
                     </div>
                 </div>
             </div>

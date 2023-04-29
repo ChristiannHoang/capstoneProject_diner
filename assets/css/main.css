@@ -825,3 +825,29 @@ footer {
 .footer__bottom-content a:hover {
     color: var(--white-color);
 }
+
+/* COMMON SECTION  */
+/* BANNER  */
+.banner {
+    min-height: 350px;
+    background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url('../img/banner2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner__path {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.banner__path a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.banner__path i {
+    font-size: 12px;
+}
