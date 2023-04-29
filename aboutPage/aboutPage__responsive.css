@@ -15,6 +15,12 @@
 }
 
 @media screen and (max-width: 575.98px) {
+    /* GLOBAL */
+    .primary__text {
+        font-size: 16px;
+    }
+
+    /* -------------------------------- */
     /* BANNER  */
     .banner {
         min-height: 250px;
@@ -25,10 +31,7 @@
     .pageAboutUs__img {
         margin: 24px 0;
     }
-    
-    .pageAboutUs__text {
-        font-size: 16px;
-    }
+
 
     .pageAboutUs__text p:first-child {
         margin: 8px 0;
