@@ -2,13 +2,9 @@ function darkMode() {
     // CHANGE ICON 
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
-    
+
     // HEADER DARK MODE 
     document.querySelector('.header__bar-icon').style.color = '#232220';
-
-    // CAROUSEL DARK MODE 
-    document.querySelector('.carousel__title').style.color = '#232220';
-    document.querySelector('.carousel__text').style.color = '#232220';
 
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
@@ -22,6 +18,15 @@ function darkMode() {
     var bgDarkMode28Length = bgDarkMode28.length;
     for (var i = 0; i < bgDarkMode28Length; i++) {
         bgDarkMode28[i].style.background = '#282828';
+    }
+
+    // BG DARK EEE
+    var bgDarkModeEEE = document.querySelectorAll('.bgDarkModeEEE');
+    var bgDarkModeEEELength = bgDarkModeEEE.length;
+    console.log(bgDarkModeEEELength);
+    for (var i = 0; i < bgDarkModeEEELength; i++) {
+        console.log(bgDarkModeEEE[i]);
+        bgDarkModeEEE[i].style.background = '#eee';
     }
 
     // HEADING EEE
@@ -61,10 +66,6 @@ function lightMode() {
     // HEADER DARK MODE 
     document.querySelector('.header__bar-icon').style.color = '#fff';
 
-    // CAROUSEL DARK MODE 
-    document.querySelector('.carousel__title').style.color = '#fff';
-    document.querySelector('.carousel__text').style.color = '#fff';
-
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
     var bgDarkMode23Length = bgDarkMode23.length;
@@ -78,6 +79,16 @@ function lightMode() {
     for (var i = 0; i < bgDarkMode28Length; i++) {
         bgDarkMode28[i].style.background = '#f7f7f7';
     }
+
+    // BG DARK EEE
+    var bgDarkModeEEE = document.querySelectorAll('.bgDarkModeEEE');
+    var bgDarkModeEEELength = bgDarkModeEEE.length;
+    console.log(bgDarkModeEEELength);
+    for (var i = 0; i < bgDarkModeEEELength; i++) {
+        console.log(bgDarkModeEEE[i]);
+        bgDarkModeEEE[i].style.background = '#161c2db3';
+    }
+    
 
     // HEADING EEE
     var headingDarkColor = document.querySelectorAll('.headingDarkColor');
@@ -112,30 +123,3 @@ document.querySelector('.header__bar').onclick = function () {
 document.querySelector('.nav__close').onclick = function () {
     document.querySelector('.header__nav').style.display = 'none';
 }
-
-// OWL CAROUSEL
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-})
-
-// VENOBOX 
-new VenoBox({
-    selector: ".my-video"
-});
-
-// COUNTER 
-$('.counter').countUp({
-    'time': 2000,
-    'delay': 20
-});

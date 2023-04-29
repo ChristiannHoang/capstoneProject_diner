@@ -7,6 +7,8 @@
     --dark-color: #232220;
     --dark-heading-color: #eee;
     --dark-text-color: #c2d0da; 
+    --bd-radius: 6px;
+    --bg-grey-color: #f7f7f7;
 }
 
 * {
@@ -50,8 +52,16 @@ html, body {
     color: var(--heading-color);
 }
 
-.categories__text h4 {
+.primary__heading {
     font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.primary__text {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 26px;
 }
 
 /* BUTTON  */
