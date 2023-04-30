@@ -20,7 +20,7 @@ function darkMode() {
         bgDarkMode28[i].style.background = '#282828';
     }
 
-    // HEADING EEE
+    // HEADING DARK MODE
     var headingDarkColor = document.querySelectorAll('.headingDarkColor');
     var headingDarkColorLength = headingDarkColor.length;
     for (var i = 0; i < headingDarkColorLength; i++) {
@@ -89,6 +89,14 @@ function lightMode() {
     var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
     for (var i = 0; i < secondaryBtnDark.length; i++) {
         secondaryBtnDark[i].classList.remove('dark-mode');
+    }
+
+    // FORM DARK MODE BOLD 232220
+    var formControl = document.querySelectorAll('.form__control');
+    var formControlLength = formControl.length;
+    for (var i = 0; i < formControlLength; i++) {
+        formControl[i].style.background = '#fff';
+        formControl[i].style.color = '#161c2db3';
     }
 }
 
