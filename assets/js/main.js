@@ -6,10 +6,6 @@ function darkMode() {
     // HEADER DARK MODE 
     document.querySelector('.header__bar-icon').style.color = '#232220';
 
-    // CAROUSEL DARK MODE 
-    document.querySelector('.carousel__title').style.color = '#232220';
-    document.querySelector('.carousel__text').style.color = '#232220';
-
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
     var bgDarkMode23Length = bgDarkMode23.length;
@@ -60,10 +56,6 @@ function lightMode() {
 
     // HEADER DARK MODE 
     document.querySelector('.header__bar-icon').style.color = '#fff';
-
-    // CAROUSEL DARK MODE 
-    document.querySelector('.carousel__title').style.color = '#fff';
-    document.querySelector('.carousel__text').style.color = '#fff';
 
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
