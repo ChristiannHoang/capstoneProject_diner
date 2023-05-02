@@ -63,6 +63,7 @@ html, body {
     font-size: 18px;
     color: var(--text-color);
     line-height: 26px;
+    margin-bottom: 0;
 }
 
 /* BUTTON  */
