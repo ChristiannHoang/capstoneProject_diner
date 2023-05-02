@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta code-navime="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Page </title>
+
+    <!-- Quicksand Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Pacifico Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="./elements.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="elementsPage">
+        <!-- HEADER  -->
+        <header>
+            <div class="container-sm">
+                <div class="row header__content align-items-center">
+                    <div class="col">
+                        <a href="../index.html" class="header__brand">
+                            Diner
+                        </a>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <form action="" class="header__search position-relative">
+                            <input type="text" class="form__control bgDarkMode23" placeholder="Search here...">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass position-absolute"></i>
+                        </form>
+                        <div class="mx-4">
+                            <i class="header__light-icon fa-regular fa-sun"></i>
+                            <i class="header__dark-icon fa-regular fa-moon"></i>
+                        </div>
+                        <div class="header__bar">
+                            <i class="header__bar-icon fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <nav class="header__nav">
+                        <button class="nav__close">
+                            <i class="nav__close-icon fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="nav__list ps-0">
+                            <li class="nav__items"><a href="../index.html" class="nav__link">Home</a></li>
+                            <li class="nav__items"><a href="../aboutPage/aboutPage.html" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__items"><a href="../servicesPage/servicesPage.html"
+                                    class="nav__link">Services</a></li>
+                            <li class="nav__items"><a href="../blogPage/blogPage.html" class="nav__link">Blog Posts</a>
+                            </li>
+                            <li class="nav__items"><a href="../404page/404page.html" class="nav__link">404 page</a></li>
+                            <li class="nav__items"><a href="../elementsPage/elementsPage.html"
+                                    class="nav__link">Elements</a></li>
+                            <li class="nav__items"><a href="../contactPage/contactPage.html"
+                                    class="nav__link">Contact</a></li>
+                            <li class="nav__items"><a href="../LandingPage/landingPage.html" class="nav__link">Landing
+                                    page</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- BANNER  -->
+        <section class="banner d-flex align-items-center justify-content-center">
+            <div class="banner__path">
+                <a href="../index.html">
+                    Home
+                </a>
+                <i class="fa-solid fa-angles-right"></i>
+                Elements page
+            </div>
+        </section>
+
+        <!-- ELEMENTS SECTION  -->
+        <section class="elementsPage py-5 bgDarkMode23">
+            <div class="container py-lg-5">
+                <div>
+                    <h3 class="elements__title headingDarkColor">Overview</h3>
+                    <h4 class="elements__item">Container</h4>
+                    <p class="primary__text darkTextColor">While containers can be nested, most layouts do not require a nested
+                        container.</p>
+                    <div class="box">
+                        <div class="box__container w-50 height-130">
+                            <div class="row h-100">
+                                <div class="col-9">
+                                    <div class="bg__light"></div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="bg__grey"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <span>&lt;div</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"container"</span>
+                                <span>&gt;</span>
+                                <div>&lt;!-- Content here --&gt;</div>
+                                <span>&lt;div&gt;</span>
+                            </code>
+                        </div>
+                    </div>
+                    <h4 class="elements__item">container-fluid</h4>
+                    <p class="primary__text darkTextColor">Use <span class="code-pink">.container-fluid</span> for a full width
+                        container, spanning the entire width of the viewport.</p>
+                    <div class="box">
+                        <div class="box__container height-130">
+                            <div class="row h-100">
+                                <div class="col-11">
+                                    <div class="bg__light"></div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="bg__grey"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <span>&lt;div</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"container-fluid"</span>
+                                <span>&gt;</span>
+                                <div>. . .</div>
+                                <span>&lt;div&gt;</span>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Display Headings</h3>
+                    <div class="box">
+                        <div class="dp headingDarkColor dp-1">Display 1</div>
+                        <div class="dp headingDarkColor dp-2">Display 2</div>
+                        <div class="dp headingDarkColor dp-3">Display 3</div>
+                        <div class="dp headingDarkColor dp-4">Display 4</div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;h1</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"display-1"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Display 1</span>
+                                    <span>&lt;/h1&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h2</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"display-2"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Display 2</span>
+                                    <span>&lt;/h2&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h3</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"display-3"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Display 3</span>
+                                    <span>&lt;/h3&gt;</span>
+                                </div>
+                                <div>
+                                    <span>&lt;h4</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"display-4"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Display 4</span>
+                                    <span>&lt;/h4&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Blockquotes With code-naviming A Source</h3>
+                    <div class="box">
+                        <div class="box__quote">
+                            <p class="primary__text darkTextColor">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            </p>
+                            <p class="primary__text darkTextColor quote__footer">Someone famous in <span>Source Title</span></p>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;blockquote</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"blockquote"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;p</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"mb-0"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
+                                    <span>&lt;/p&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;footer</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"blockquote-footer"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Someone famous in</span>
+                                    <span>&lt;cite</span>
+                                    <span class="code-navi">title=</span>
+                                    <span class="code-red">"Source Title"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Source Title</span>
+                                    <span>&lt;/cite&gt;&lt;/footer&gt;</span>
+                                </div>
+                                <div>
+                                    <span>&lt;/blockquote&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Alignments</h3>
+                    <div class="box">
+                        <div class="box__quote text-end">
+                            <p class="primary__text darkTextColor">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            </p>
+                            <p class="primary__text darkTextColor quote__footer">Someone famous in <span>Source Title</span></p>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;blockquote</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"blockquote text-right"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;p</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"mb-0"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
+                                    <span>&lt;/p&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;footer</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"blockquote-footer"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Someone famous in</span>
+                                    <span>&lt;cite</span>
+                                    <span class="code-navi">title=</span>
+                                    <span class="code-red">"Source Title"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Source Title</span>
+                                    <span>&lt;/cite&gt;&lt;/footer&gt;</span>
+                                </div>
+                                <div>
+                                    <span>&lt;/blockquote&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Jumbotron</h3>
+                    <div class="box border-0 bg__light py-64">
+                        <h2 class="dp headingDarkColor dp-4">Hello, world!</h2>
+                        <p class="primary__text darkTextColor">This is a simple hero unit, a simple jumbotron-style component for
+                            calling extra attention to featured content or information.</p>
+                        <hr py-4>
+                        <div class="primary__text darkTextColor">It uses utility classes for typography and spacing to space content
+                            out within the larger container.</div>
+                        <div class="btn primary-btn mt-3">Learn more</div>
+                    </div>
+                    <div class="box border-0 box__bg-eee mt-32 jumbotron">
+                        <code>
+                            <div class="mb-1">
+                                <span>&lt;div</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"jumbotron"</span>
+                                <span>&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;h1</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"display-4"</span>
+                                <span>&gt;</span>
+                                <span class="fw-semibold">Hello, world!</span>
+                                <span>&lt;/h1&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;p</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"lead"</span>
+                                <span>&gt;</span>
+                                <span class="fw-semibold">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</span>
+                                <span>&lt;/p&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;hr</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"my-4"</span>
+                                <span>&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;p</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"lead"</span>
+                                <span>&gt;</span>
+                                <div class="ps-5">
+                                    <span>&lt;a</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-primary btn-lg"</span>
+                                    <span class="code-navi">href=</span>
+                                    <span class="code-red">"#"</span>
+                                    <span class="code-navi">role=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Learn more</span>
+                                    <span>&lt;/a&gt;</span>
+                                </div>
+                                <span>&lt;/p&gt;</span>
+                            </div>
+                            <div>
+                                <span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Fluid jumbotron</h3>
+                    <div class="box border-0 bg__light py-64">
+                        <h2 class="dp headingDarkColor dp-4">Hello, world!</h2>
+                        <p class="primary__text darkTextColor">This is a modified jumbotron that occupies the entire horizontal space
+                            of its parent.</p>
+                    </div>
+                    <div class="box border-0 box__bg-eee mt-32 jumbotron">
+                        <code>
+                            <div class="mb-1">
+                                <span>&lt;div</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"jumbotron jumbotron-fluid""</span>
+                                <span>&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;h1</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"display-4"</span>
+                                <span>&gt;</span>
+                                <span class="fw-semibold">Hello, world!</span>
+                                <span>&lt;/h1&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;p</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"lead"</span>
+                                <span>&gt;</span>
+                                <span class="fw-semibold">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</span>
+                                <span>&lt;/p&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;hr</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"my-4"</span>
+                                <span>&gt;</span>
+                            </div>
+                            <div class="mb-1 ps-5">
+                                <span>&lt;p</span>
+                                <span class="code-navi">class=</span>
+                                <span class="code-red">"lead"</span>
+                                <span>&gt;</span>
+                                <div class="ps-5">
+                                    <span>&lt;a</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-primary btn-lg"</span>
+                                    <span class="code-navi">href=</span>
+                                    <span class="code-red">"#"</span>
+                                    <span class="code-navi">role=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Learn more</span>
+                                    <span>&lt;/a&gt;</span>
+                                </div>
+                                <span>&lt;/p&gt;</span>
+                            </div>
+                            <div>
+                                <span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Buttons</h3>
+                    <div class="box">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-primary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Primary</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Secondary</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-success"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Success</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-danger"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Danger</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-warning"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Warning</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-info"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Info</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-light"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Light</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-dark"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Dark</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-link"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Link</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Outline buttons</h3>
+                    <div class="box">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                        <button type="button" class="btn btn-outline-light">Light</button>
+                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-primary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Primary</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Secondary</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-success"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Success</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-danger"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Danger</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-warning"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Warning</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-info"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Info</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-light"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Light</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-dark"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Dark</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span>
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-outline-link"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Link</span>
+                                    <span>&lt;/button&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex Properties -->
+                <div class="elements__part">
+                    <h3 class="elements__title mb-0 headingDarkColor">Flex Properties</h3>
+                    <!-- D - FLEX  -->
+                    <h4 class="elements__item">d-flex</h4>
+                    <div class="box">
+                        <div class="box__container box__bg-eee p-1 m-0">
+                            <p class="primary__text">I'm a flexbox container!</p>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex p-2 bd-highlight"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">I'm a flexbox container!</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+
+                    <!-- D- INLINE - FLEX  -->
+                    <h4 class="elements__item">d-inline-flex</h4>
+                    <div class="box">
+                        <div class="box__container box__bg-eee p-1 m-0 d-inline-flex">
+                            <p class="primary__text">I'm an inline flexbox container!</p>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex p-2 bd-highlight"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">I'm a flexbox container!</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex Direction -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor mb-0">Flex Direction</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <!-- flex-row  -->
+                            <h4 class="elements__item">flex-row</h4>
+                            <div class="box">
+                                <div class="box__container d-flex box__bg-eee mb-0">
+                                    <div class="d-flex">
+                                        <div class="p-2 border border-white">Flex item 1</div>
+                                        <div class="p-2 border border-white">Flex item 2</div>
+                                        <div class="p-2 border border-white">Flex item 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"d-flex flex-row bd-highlight mb-3"</span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 1</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 2</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 3</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <!-- flex-row-reverse  -->
+                            <h4 class="elements__item">flex-row-reverse</h4>
+                            <div class="box">
+                                <div class="box__container d-flex flex-lg-row-reverse box__bg-eee mb-0">
+                                    <div class="d-flex">
+                                        <div class="p-2 border border-white">Flex item 1</div>
+                                        <div class="p-2 border border-white">Flex item 2</div>
+                                        <div class="p-2 border border-white">Flex item 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"d-flex flex-row-reverse bd-highlight"</span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 1</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 2</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;div</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"p-2 bd-highlight"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Flex item 3</span>
+                                            <span>&lt;/div&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Justify Content -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Justify Content</h3>
+                    <div class="box">
+                        <div class="box__container d-flex box__bg-eee mb-0">
+                            <div class="d-flex">
+                                <div class="p-2 border-end border-white">Flex item 1</div>
+                                <div class="p-2 border-end border-white">Flex item 2</div>
+                                <div class="p-2 border-end border-white">Flex item 3</div>
+                            </div>
+                        </div>
+                        <div class="box__container d-flex justify-content-end box__bg-eee mb-0 mt-3">
+                            <div class="d-flex">
+                                <div class="p-2 border-start border-white">Flex item 1</div>
+                                <div class="p-2 border-start border-white">Flex item 2</div>
+                                <div class="p-2 border-start border-white">Flex item 3</div>
+                            </div>
+                        </div>
+                        <div class="box__container d-flex justify-content-center box__bg-eee mb-0 mt-3">
+                            <div class="d-flex">
+                                <div class="p-2 border-start border-white">Flex item 1</div>
+                                <div class="p-2 border-start border-white">Flex item 2</div>
+                                <div class="p-2 border-start border-end border-white">Flex item 3</div>
+                            </div>
+                        </div>
+                        <div class="box__container d-flex box__bg-eee mb-0 mt-3">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="p-2 border-end border-white">Flex item 1</div>
+                                <div class="p-2 border-start border-end border-white">Flex item 2</div>
+                                <div class="p-2 border-start border-white">Flex item 3</div>
+                            </div>
+                        </div>
+                        <div class="box__container d-flex box__bg-eee mb-0 mt-3">
+                            <div class="d-flex justify-content-around w-100">
+                                <div class="p-2 border-start border-end border-white">Flex item 1</div>
+                                <div class="p-2 border-start border-end border-white">Flex item 2</div>
+                                <div class="p-2 border-start border-end border-white">Flex item 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex justify-content-start"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">. . .</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex justify-content-end"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">. . .</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex justify-content-center"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">. . .</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex justify-content-between"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">. . .</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"d-flex justify-content-around"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">. . .</span>
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Badges</h3>
+                    <div class="box">
+                        <h1 class="badge__h1 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h1>
+                        <h1 class="badge__h1 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h1>
+                        <h2 class="badge__h2 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h2>
+                        <h3 class="badge__h3 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h3>
+                        <h4 class="badge__h4 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h4>
+                        <h5 class="badge__h5 headingDarkColor">Example heading <span class="badge text-bg-secondary">New</span></h5>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;h1</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h1</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h2</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h2</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h3</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h3</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h4</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h4</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h5</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h5</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;h6</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Example heading</span>
+                                    <span>&lt;span</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"badge badge-secondary"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">New</span>
+                                    <span>&lt;/span</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;/h6</span>
+                                    <span>&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIST  -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor mb-0">Lists</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h4 class="elements__item mb-5">List Group</h4>
+                            <div class="box">
+                                <ul class="listGroup list-unstyled mb-0">
+                                    <li class="bg__light darkTextColor p-2 border border-1">Cras justo odio</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Dapibus ac facilisis in</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Morbi leo risus</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Porta ac consectetur ac</li>
+                                    <li class="bg__light darkTextColor p-2 border border-1">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;ul</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group"</span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Cras justo odio</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Dapibus ac facilisis in</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Morbi leo risus</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Porta ac consectetur ac</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Vestibulum at eros</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/ul&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                            </div>
+                            <h4 class="elements__item">Flush</h4>
+                            <div class="box">
+                                <ul class="listGroup list-unstyled mb-0">
+                                    <li class="bg__light darkTextColor rounded-0 border-bottom p-2">Cras justo odio</li>
+                                    <li class="bg__light darkTextColor rounded-0 border-bottom p-2">Dapibus ac facilisis in</li>
+                                    <li class="bg__light darkTextColor rounded-0 border-bottom p-2">Morbi leo risus</li>
+                                    <li class="bg__light darkTextColor rounded-0 border-bottom p-2">Porta ac consectetur ac</li>
+                                    <li class="bg__light darkTextColor rounded-0 p-2">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;ul</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group list-group-flush"</span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Cras justo odio</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Dapibus ac facilisis in</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Morbi leo risus</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Porta ac consectetur ac</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Vestibulum at eros</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/ul&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h4 class="elements__item mb-5">Active items</h4>
+                            <div class="box">
+                                <ul class="listGroup list-unstyled mb-0">
+                                    <li class="bg__light darkTextColor p-2 border border-1 active">Cras justo odio</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Dapibus ac facilisis in</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Morbi leo risus</li>
+                                    <li class="bg__light darkTextColor p-2 border rounded-0 border-1">Porta ac consectetur ac</li>
+                                    <li class="bg__light darkTextColor p-2 border border-1">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;ul</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group"</span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item active"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Cras justo odio</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Dapibus ac facilisis in</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Morbi leo risus</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Porta ac consectetur ac</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Vestibulum at eros</span>
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/ul&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                            </div>
+                            <h4 class="elements__item">With Badges</h4>
+                            <div class="box">
+                                <ul class="listGroup list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between bg__light p-2 border border-1">
+                                        <div class="darkTextColor">Cras justo odio</div>
+                                        <span class="badge">14</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between bg__light p-2 border rounded-0 border-1">
+                                        <div class="darkTextColor">Dapibus ac facilisis in</div>
+                                        <span class="badge">2</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between bg__light p-2 border border-1">
+                                        <div class="darkTextColor">Morbi leo risus</div>
+                                        <span class="badge">1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box box__bg-grey">
+                                <div class="box__container box__bg-eee p-4 overflow-x-scroll">
+                                    <code>
+                                        <div class="mb-1">
+                                            <span>&lt;ul</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group"></span>
+                                            <span>&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item d-flex justify-content-between align-items-center"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Cras justo odio</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;span</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"badge badge-primary badge-pill"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">14</span>
+                                            <span>&lt;/span&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item d-flex justify-content-between align-items-center"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Dapibus ac facilisis in</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;span</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"badge badge-primary badge-pill"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">2</span>
+                                            <span>&lt;/span&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;li</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"list-group-item d-flex justify-content-between align-items-center"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">Morbi leo risus</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;span</span>
+                                            <span class="code-navi">class=</span>
+                                            <span class="code-red">"badge badge-primary badge-pill"</span>
+                                            <span>&gt;</span>
+                                            <span class="fw-semibold">1</span>
+                                            <span>&lt;/span&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/li&gt;</span>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span>&lt;/ul&gt;</span>
+                                        </div>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breadcrumb -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Breadcrumb</h3>
+                    <div class="box">
+                        <div class="bg__light p-2 darkTextColor">Home</div>
+                        <div class="bg__light p-2 mt-3">
+                            <a href="#" class="primary__color text-decoration-none">Home</a>
+                            <span>/ Library</span>
+                        </div>
+                        <div class="bg__light p-2 mt-3">
+                            <a href="#" class="primary__color text-decoration-none">Home</a>
+                            <span class="darkTextColor">/</span>
+                            <a href="#" class="primary__color text-decoration-none">Library</a>
+                            <span class="darkTextColor">/ Data</span>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;code-naviv</span>
+                                    <span class="code-navi">aria-label=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;ol</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item active"</span>
+                                    <span class="code-navi">aria-current=</span>
+                                    <span class="code-red">"page"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Home</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/ol&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/code-naviv&gt;</span>
+                                </div>
+                                <br>
+                                <div class="mb-1">
+                                    <span>&lt;code-naviv</span>
+                                    <span class="code-navi">aria-label=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;ol</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item"</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;a</span>
+                                    <span class="code-navi">href=</span>
+                                    <span class="code-red">"#"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Home</span>
+                                    <span>&lt;/a&gt;</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item active"</span>
+                                    <span class="code-navi">aria-current=</span>
+                                    <span class="code-red">"page"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Library</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/ol&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/code-naviv&gt;</span>
+                                </div>
+                                <br>
+                                <div class="mb-1">
+                                    <span>&lt;code-naviv</span>
+                                    <span class="code-navi">aria-label=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;ol</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item"</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;a</span>
+                                    <span class="code-navi">href=</span>
+                                    <span class="code-red">"#"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Home</span>
+                                    <span>&lt;/a&gt;</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item"</span>
+                                    <span>&gt;</span>
+                                    <span>&lt;a</span>
+                                    <span class="code-navi">href=</span>
+                                    <span class="code-red">"#"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Library</span>
+                                    <span>&lt;/a&gt;</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;li</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"breadcrumb-item active"</span>
+                                    <span class="code-navi">aria-current=</span>
+                                    <span class="code-red">"page"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Data</span>
+                                    <span>&lt;/li&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/ol&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/code-naviv&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TABLE  -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Tables</h3>
+                    <div class="box">
+                        <table class="table primary__text darkTextColor">
+                            <thead class="bg__light">
+                                <tr>
+                                    <th class="border-end border-start">#</th>
+                                    <th class="border-end">First</th>
+                                    <th class="border-end">Last</th>
+                                    <th class="border-end">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="border-end border-start">1</th>
+                                    <td class="border-end">Mark</td>
+                                    <td class="border-end">Otto</td>
+                                    <td class="border-end">@mdo</td>
+                                </tr>
+                                <tr class="box__bg-eee">
+                                    <th class="border-end border-start">2</th>
+                                    <td class="border-end">Jacob</td>
+                                    <td class="border-end">Thornton</td>
+                                    <td class="border-end">@fat</td>
+                                </tr>
+                                <tr>
+                                    <th class="border-end border-start">3</th>
+                                    <td class="border-end">Larry</td>
+                                    <td class="border-end">the Bird</td>
+                                    <td class="border-end">@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;table</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"table"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;thead&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">#</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">First</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Last</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Handle</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/thead&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tbody&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">1</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Mark</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Otto</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@mdo</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">2</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Jacob</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Thornton</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@fat</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">3</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Larry</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">the Bird</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@twitter</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tbody&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/table&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                    <h4 class="elements__item">Striped rows</h4>
+                    <div class="box">
+                        <table class="table primary__text darkTextColor">
+                            <thead class="bg__light">
+                                <tr>
+                                    <th class="border-end border-start">#</th>
+                                    <th class="border-end">First</th>
+                                    <th class="border-end">Last</th>
+                                    <th class="border-end">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="border-end border-start">1</th>
+                                    <td class="border-end">Mark</td>
+                                    <td class="border-end">Otto</td>
+                                    <td class="border-end">@mdo</td>
+                                </tr>
+                                <tr class="box__bg-eee">
+                                    <th class="border-end border-start">2</th>
+                                    <td class="border-end">Jacob</td>
+                                    <td class="border-end">Thornton</td>
+                                    <td class="border-end">@fat</td>
+                                </tr>
+                                <tr>
+                                    <th class="border-end border-start">3</th>
+                                    <td class="border-end">Larry</td>
+                                    <td class="border-end">the Bird</td>
+                                    <td class="border-end">@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code>
+                                <div class="mb-1">
+                                    <span>&lt;table</span>
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"table table-striped"</span>
+                                    <span>&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;thead&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">#</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">First</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Last</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"col"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Handle</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/thead&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tbody&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">1</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Mark</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Otto</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@mdo</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">2</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Jacob</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Thornton</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@fat</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;tr&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;th</span>
+                                    <span class="code-navi">scope=</span>
+                                    <span class="code-red">"row"</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">3</span>
+                                    <span>&lt;/th&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">Larry</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">the Bird</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="ps-4 mb-1">
+                                    <span>&lt;td</span>
+                                    <span>&gt;</span>
+                                    <span class="fw-semibold">@twitter</span>
+                                    <span>&lt;/td&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tr&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/tbody&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/table&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL  -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Modals</h3>
+                    <h4 class="elements__item">Live demo</h4>
+                    <div class="box">
+                        <!-- Button trigger modal -->
+                        <button class="modal__btn border-0 p-2 rounded-2 text-white" type="button"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code class="language-html" data-lang="html">
+                                <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+                                <div class="mb-1">
+                                    <span>&lt;button</span> 
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span> 
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-primary"</span> <span class="code-navi">data-toggle=</span><span class="code-red">"modal"</span> <span class="code-navi">data-target=</span><span class="code-red">"#exampleModal"</span><span >&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span class="fw-semibold">Launch demo modal</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span >&lt;/button&gt;</span>
+                                </div>                                
+                                <br>
+                                <div class="mb-1">
+                                    <span class="c">&lt;!-- Modal --&gt;</span>
+                                </div>        
+                                <div class="mb-1">
+                                    <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal fade"</span> <span class="code-navi">id=</span><span class="code-red">"exampleModal"</span> <span class="code-navi">tabindex=</span><span class="code-red">"-1"</span> <span class="code-navi">role=</span><span class="code-red">"dialog"</span> <span class="code-navi">aria-labelledby=</span><span class="code-red">"exampleModalLabel"</span> <span class="code-navi">aria-hidden=</span><span class="code-red">"true"</span><span>&gt;</span>
+                                </div>  
+                                <div class="mb-1">
+                                    <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-dialog"</span> <span class="code-navi">role=</span><span class="code-red">"document"</span><span >&gt;</span>
+                                </div>  
+                                <div class="mb-1 ps-5">
+                                    <div class="mb-1">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-content"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-header"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;h5</span> <span class="code-navi">class=</span><span class="code-red">"modal-title"</span> <span class="code-navi">id=</span><span class="code-red">"exampleModalLabel"</span><span >&gt;</span>Modal title<span >&lt;/h5&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"close"</span> <span class="code-navi">data-dismiss=</span><span class="code-red">"modal"</span> <span class="code-navi">aria-label=</span><span class="code-red">"Close"</span><span >&gt;</span>
+                                        <div class="mb-1 ps-5">
+                                            <span >&lt;span</span> <span class="code-navi">aria-hidden=</span><span class="code-red">"true"</span><span >&gt;</span><span class="ni">&amp;times;</span><span >&lt;/span&gt;</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-body"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span class="fw-semi-bold">. . .</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-footer"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"btn btn-secondary"</span> <span class="code-navi">data-dismiss=</span><span class="code-red">"modal"</span><span >&gt;</span>Close<span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"btn btn-primary"</span><span >&gt;</span>Save changes<span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span >&lt;/div&gt;</span>
+                                </div>                    
+                                <div class="mb-1">
+                                    <span >&lt;/div&gt;</span>
+                                </div> 
+                                <div class="mb-1">
+                                    <span >&lt;/div&gt;</span>
+                                </div> 
+                            </code>
+                        </div>
+                    </div>
+                    <!-- Vertically centered -->
+                    <h4 class="elements__item">Vertically centered</h4>
+                    <div class="box">
+                        <!-- Vertically centered modal -->
+                        <button class="modal__btn border-0 p-2 rounded-2 text-white" type="button"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code class="language-html" data-lang="html">
+                                <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+                                <div class="mb-1">
+                                    <span>&lt;button</span> 
+                                    <span class="code-navi">type=</span>
+                                    <span class="code-red">"button"</span> 
+                                    <span class="code-navi">class=</span>
+                                    <span class="code-red">"btn btn-primary"</span> <span class="code-navi">data-toggle=</span><span class="code-red">"modal"</span> <span class="code-navi">data-target=</span><span class="code-red">"#exampleModal"</span><span >&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span class="fw-semibold">Launch demo modal</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span >&lt;/button&gt;</span>
+                                </div>                                
+                                <br>
+                                <div class="mb-1">
+                                    <span class="c">&lt;!-- Modal --&gt;</span>
+                                </div>        
+                                <div class="mb-1">
+                                    <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal fade"</span> <span class="code-navi">id=</span><span class="code-red">"exampleModal"</span> <span class="code-navi">tabindex=</span><span class="code-red">"-1"</span> <span class="code-navi">role=</span><span class="code-red">"dialog"</span> <span class="code-navi">aria-labelledby=</span><span class="code-red">"exampleModalLabel"</span> <span class="code-navi">aria-hidden=</span><span class="code-red">"true"</span><span>&gt;</span>
+                                </div>  
+                                <div class="mb-1">
+                                    <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-dialog modal-dialog-centered"</span> <span class="code-navi">role=</span><span class="code-red">"document"</span><span >&gt;</span>
+                                </div>  
+                                <div class="mb-1 ps-5">
+                                    <div class="mb-1">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-content"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-header"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;h5</span> <span class="code-navi">class=</span><span class="code-red">"modal-title"</span> <span class="code-navi">id=</span><span class="code-red">"exampleModalLabel"</span><span >&gt;</span>Modal title<span >&lt;/h5&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"close"</span> <span class="code-navi">data-dismiss=</span><span class="code-red">"modal"</span> <span class="code-navi">aria-label=</span><span class="code-red">"Close"</span><span >&gt;</span>
+                                        <div class="mb-1 ps-5">
+                                            <span >&lt;span</span> <span class="code-navi">aria-hidden=</span><span class="code-red">"true"</span><span >&gt;</span><span class="ni">&amp;times;</span><span >&lt;/span&gt;</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-body"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span class="fw-semi-bold">. . .</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"modal-footer"</span><span >&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"btn btn-secondary"</span> <span class="code-navi">data-dismiss=</span><span class="code-red">"modal"</span><span >&gt;</span>Close<span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"button"</span> <span class="code-navi">class=</span><span class="code-red">"btn btn-primary"</span><span >&gt;</span>Save changes<span >&lt;/button&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span >&lt;/div&gt;</span>
+                                    </div>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span >&lt;/div&gt;</span>
+                                </div>                    
+                                <div class="mb-1">
+                                    <span >&lt;/div&gt;</span>
+                                </div> 
+                                <div class="mb-1">
+                                    <span >&lt;/div&gt;</span>
+                                </div> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORM  -->
+                <div class="elements__part">
+                    <h3 class="elements__title headingDarkColor">Forms</h3>
+                    <div class="box">
+                        <form>
+                            <div class="form-group">
+                                <label class="headingDarkColor" for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control bg__light" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted darkTextColor">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label class="headingDarkColor" for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control bg__light" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check mt-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label headingDarkColor" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary mt-3 bg__primary border-0 text-white">Submit</button>
+                        </form>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code class="language-html" data-lang="html"><span>&lt;form&gt;</span>
+                                <div class="mb-1">
+                                    <span>&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"form-group"</span><span>&gt;</span>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;label</span> <span class="code-navi">for=</span><span class="code-red">"exampleInputEmail1"</span><span>&gt;</span> <span class="fw-semibold">Email address</span><span>&lt;/label&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;input</span> <span class="code-navi">type=</span><span class="code-red">"email"</span> <span class="code-navi">class=</span><span class="code-red">"form-control"</span> <span class="code-navi">id=</span><span class="code-red">"exampleInputEmail1"</span> <span class="code-navi">aria-describedby=</span><span class="code-red">"emailHelp"</span> <span class="code-navi">placeholder=</span><span class="code-red">"Enter email"</span><span>&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;small</span> <span class="code-navi">id=</span><span class="code-red">"emailHelp"</span> <span class="code-navi">class=</span><span class="code-red">"form-text text-muted"</span><span>&gt;</span> <span class="fw-semibold">We'll never share your email with anyone else.</span> <span>&lt;/small&gt;</span>
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"form-group"</span><span>&gt;</span>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;label</span> <span class="code-navi">for=</span><span class="code-red">"exampleInputPassword1"</span><span>&gt;</span> <span class="fw-semibold">Password</span> <span>&lt;/label&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;input</span> <span class="code-navi">type=</span><span class="code-red">"password"</span> <span class="code-navi">class=</span><span class="code-red">"form-control"</span> <span class="code-navi">id=</span><span class="code-red">"exampleInputPassword1"</span> <span class="code-navi">placeholder=</span><span class="code-red">"Password"</span><span>&gt;</span>
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;div</span> <span class="code-navi">class=</span><span class="code-red">"form-check"</span><span>&gt;</span>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;input</span> <span class="code-navi">type=</span><span class="code-red">"checkbox"</span> <span class="code-navi">class=</span><span class="code-red">"form-check-input"</span> <span class="code-navi">id=</span><span class="code-red">"exampleCheck1"</span><span>&gt;</span>
+                                    </div>
+                                    <div class="mb-1 ps-5">
+                                        <span>&lt;label</span> <span class="code-navi">class=</span><span class="code-red">"form-check-label"</span> <span class="code-navi">for=</span><span class="code-red">"exampleCheck1"</span><span>&gt;</span> <span class="fw-semibold">Check me out</span> <span>&lt;/label&gt;</span>
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;button</span> <span class="code-navi">type=</span><span class="code-red">"submit"</span> <span class="code-navi">class=</span><span class="code-red">"btn btn-primary"</span><span>&gt;</span> <span class="fw-semibold">Submit</span> <span>&lt;/button&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span>&lt;/form&gt;</span>
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                    <h4 class="elements__item">Readonly plain text</h4>
+                    <div class="box">
+                        <form>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label headingDarkColor">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control-plaintext darkTextColor" id="staticEmail"
+                                        value="email@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <label for="inputPassword" class="col-sm-2 col-form-label headingDarkColor">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control bg__light" id="inputPassword"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box box__bg-grey">
+                        <div class="box__container box__bg-eee p-4">
+                            <code class="language-html" data-lang="html"><span class="code-red">&lt;form&gt;</span>
+                                <div class="mb-1">
+                                    <span class="code-red">&lt;div</span> <span  class="code-navi">class=</span><span  class="code-red">"form-group row"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;label</span> <span  class="code-navi">for=</span><span  class="code-red">"staticEmail"</span> <span  class="code-navi">class=</span><span  class="code-red">"col-sm-2 col-form-label"</span><span class="code-red">&gt;</span> <span class="fw-semibold">Email</span> <span class="code-red">&lt;/label&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;div</span> <span  class="code-navi">class=</span><span  class="code-red">"col-sm-10"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;input</span> <span  class="code-navi">type=</span><span  class="code-red">"text"</span> <span  class="code-navi">readonly</span> <span  class="code-navi">class=</span><span  class="code-red">"form-control-plaintext"</span> <span  class="code-navi">id=</span><span  class="code-red">"staticEmail"</span> <span  class="code-navi">value=</span><span  class="code-red">"email@example.com"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span class="code-red">&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">
+                                    <span class="code-red">&lt;div</span> <span  class="code-navi">class=</span><span  class="code-red">"form-group row"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;label</span> <span  class="code-navi">for=</span><span  class="code-red">"inputPassword"</span> <span  class="code-navi">class=</span><span  class="code-red">"col-sm-2 col-form-label"</span><span class="code-red">&gt;</span> <span class="fw-semibold">Password</span> <span class="code-red">&lt;/label&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;div</span> <span  class="code-navi">class=</span><span  class="code-red">"col-sm-10"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;input</span> <span  class="code-navi">type=</span><span  class="code-red">"password"</span> <span  class="code-navi">class=</span><span  class="code-red">"form-control"</span> <span  class="code-navi">id=</span><span  class="code-red">"inputPassword"</span> <span  class="code-navi">placeholder=</span><span  class="code-red">"Password"</span><span class="code-red">&gt;</span>
+                                </div>
+                                <div class="mb-1 ps-5">
+                                    <span class="code-red">&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">  
+                                    <span class="code-red">&lt;/div&gt;</span>
+                                </div>
+                                <div class="mb-1">  
+                                    <span class="code-red">&lt;/form&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="container-sm">
+            <div class="row footer__main">
+                <div class="col-12 text-center text-sm-start mb-5 mb-lg-0 col-sm-6 col-lg-4">
+                    <a href="#" class="footer__brand">Diner</a>
+                    <p class="footer__item">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                        ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                    <div class="footer__icon text-center text-lg-start">
+                        <a href="#" class="text-decoration-none">
+                            <i class="footer__icon-item bgDarkMode23 fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="footer__icon-item bgDarkMode23 fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="footer__icon-item bgDarkMode23 fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="footer__icon-item bgDarkMode23 fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-sm-start mb-5 mb-lg-0 col-lg-2">
+                    <div class="footer__title">Categories</div>
+                    <div class="footer__item">
+                        <a href="" class="footer__link">Drinks</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__link">Food</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-sm-start mb-5 mb-sm-0 col-lg-2">
+                    <div class="footer__title">Archives</div>
+                    <div class="footer__item">
+                        <a href="" class="footer__link">March 2021</a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-sm-start col-sm-6 col-lg-4">
+                    <div class="footer__title">Subscribe to our Newsletter</div>
+                    <p class="footer__item">Enter your email and receive the latest news, updates and special offers
+                        from us</p>
+                    <form action="" class="footer__sub mt-4">
+                        <input type="text" class="w-100 form__control bgDarkMode23" placeholder="Your Email Address">
+                        <button class="btn primary-btn mt-3 w-100">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row footer__bottom">
+                <div class="col-12 footer__bottom-content text-center text-lg-start">
+                    &copy 2023 Diner. All Rights Reserved | WordPress Theme by <a
+                        href="https://w3layouts.com/">W3Layouts.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="backToTop__btn cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    </div>
+
+    <!-- JQUERY  -->
+    <script src="../assets/js/jquery-3.6.4.min.js"></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- BACK TO TOP  -->
+    <script src="../assets/js/util-back-to-top.js"></script>
+    <script src="../assets/js/main-back-to-top.js"></script>
+
+    <!-- MAIN JS  -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
