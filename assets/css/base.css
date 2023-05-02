@@ -6,7 +6,7 @@
     --text-color: #161c2db3;
     --dark-color: #232220;
     --dark-heading-color: #eee;
-    --dark-text-color: #c2d0da; 
+    --dark-text-color: #c2d0da;
     --bd-radius: 6px;
     --bg-grey-color: #f7f7f7;
 }
@@ -19,7 +19,8 @@
     -moz-box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -67,7 +68,7 @@ html, body {
 }
 
 /* BUTTON  */
-.primary-btn {  
+.primary-btn {
     font-size: 16px;
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -116,15 +117,13 @@ html, body {
 }
 
 /* BACK TO TOP  */
-
-.backToTop__btn {
+/* .backToTop__btn {
     position: fixed;
     right: 25px;
     bottom: 50px;
     width: 50px;
     height: 50px;
     background-color: var(--primary-color);
-    color: var(--white-color);
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
@@ -133,7 +132,36 @@ html, body {
     visibility: 0;
     transition: all .5s;
     z-index: 1;
+}
 
+.backToTop__btn i {
+    color: var(--white-color);
+} */
+
+/* .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+} */
+
+.backToTop__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.backToTop__btn i {
+    color: white;
 }
 
 .cd-top--is-visible {
@@ -144,4 +172,3 @@ html, body {
 .cd-top--fade-out {
     opacity: .5;
 }
-
