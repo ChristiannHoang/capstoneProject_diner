@@ -158,6 +158,8 @@ body {
     position: fixed;
     bottom: 50px;
     right: 50px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .backToTop__btn i {

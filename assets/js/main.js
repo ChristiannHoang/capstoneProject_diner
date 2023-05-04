@@ -46,6 +46,7 @@ function darkMode() {
     for (var i = 0; i < formControlLength; i++) {
         formControl[i].style.background = '#282828';
         formControl[i].style.color = '#c2d0da';
+        // formControl[i].style.cssText = 'background = #282828; color: #c2d0da';
     }
 }
 
