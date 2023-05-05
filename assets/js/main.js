@@ -2,9 +2,6 @@ function darkMode() {
     // CHANGE ICON 
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
-    
-    // HEADER DARK MODE 
-    document.querySelector('.header__bar-icon').style.color = '#232220';
 
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
@@ -55,9 +52,6 @@ function lightMode() {
     document.querySelector('.header__dark-icon').style.display = 'block';
     document.querySelector('.header__light-icon').style.display = 'none';
 
-    // HEADER DARK MODE 
-    document.querySelector('.header__bar-icon').style.color = '#fff';
-
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
     var bgDarkMode23Length = bgDarkMode23.length;
@@ -101,18 +95,19 @@ function lightMode() {
     }
 }
 
+// // ACTIVE NAVBAR ITEMS 
+// var navItems = document.querySelectorAll('#myNavbar .nav__link');
+// for (var i = 0; i < navItems.length; i++) {
+//     navItems[i].onclick = function (e) {
+//         e.preventDefault();
+//         if (this.classList == 'nav-link nav__link active') {
+//             this.classList.remove('active');
+//         }
+//     }
+// }
 
 document.querySelector('.header__dark-icon').onclick = darkMode;
 document.querySelector('.header__light-icon').onclick = lightMode;
-
-// --HEADER OPEN NAV 
-document.querySelector('.header__bar').onclick = function () {
-    document.querySelector('.header__nav').style.display = 'flex';
-}
-
-document.querySelector('.nav__close').onclick = function () {
-    document.querySelector('.header__nav').style.display = 'none';
-}
 
 // OWL CAROUSEL
 $('.owl-carousel').owlCarousel({
