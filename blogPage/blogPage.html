@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+
+    <!-- Quicksand Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Pacifico Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <style>
+        .blogPost {
+            background-color: var(--bg-grey-color);
+        }
+
+        .card-img__text .card__categories {
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            padding: 3px 20px;
+            border-radius: 35px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .card-img__text .card__time {
+            color: var(--white-color);
+            font-size: 15px;
+        }
+
+        .card-img__text .card__time i {
+            margin-right: 10px;
+        }
+
+        .blogPost-item {
+            margin-right: 10px;
+        }
+
+        .blogPost-link {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: 16px;
+            padding: 8px 16px;
+            border: 1px solid #eee;
+            border-radius: var(--bd-radius);
+            transition: all .5s;
+        }
+
+        .blogPost-link:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .blogPost-link.active {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .blogPost__container {
+            padding: 40px 30px;
+            background-color: var(--white-color);
+            border-radius: var(--bd-radius);
+            margin-bottom: 40px;
+        }
+
+        .blogPost__container:last-child {
+            margin-bottom: 0;
+        }
+
+        .blogPost__search .form__control {
+            padding: 12px 85px 12px 17px;
+        }
+
+        .blogPost__search .btn {
+            top: 2px;
+            right: 2px;
+            padding: 11px;
+            border: none;
+        }
+
+        .blogPost__title {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .blogPost__link {
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 19px;
+            line-height: 25px;
+            font-weight: 500;
+            padding: 3px 0;
+            transition: all .5s;
+        }
+
+        .blogPost__link:hover {
+            color: var(--primary-color);
+        }
+
+        .blogPost__cmtText {
+            font-size: 16px;
+            font-weight: 500;
+            color: #404040;
+            margin-bottom: 20px;
+        }
+
+        .blogPost__cmtText a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .blogPost__cmtText a:hover {
+            text-decoration: underline;
+        }
+
+        .blogPost__list {
+            list-style-type: square;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blogPage">
+        <!-- HEADER  -->
+        <header>
+            <nav id="myNavbar" class="navbar position-absolute w-100 navbar-expand-lg">
+                <div class="container-sm">
+                    <a class="navbar-brand header__brand" href="../index.html">Diner</a>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#myMainNavbar" aria-controls="myMainNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="navbar__toggle-icon fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse p-3 px-lg-0 row" id="myMainNavbar">
+                        <div class="col-12 col-lg-9">
+                            <ul
+                                class="navbar-nav nav__list mx-auto px-lg-3 mb-lg-0 flex-wrap justify-content-center text-center">
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../aboutPage/aboutPage.html">About</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../servicesPage/servicesPage.html">Services</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../blogPage/blogPage.html">Blog Post</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../404page/404page.html">404 page</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../elementsPage/elementsPage.html">Elements</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../contactPage/contactPage.html">Contact</a>
+                                </li>
+                                <li class="nav-item nav__items">
+                                    <a class="nav-link nav__link" href="../landingPage/landingPage.html">Landing
+                                        page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-4 mt-lg-0">
+                            <div class="row">
+                                <div class="col-10">
+                                    <form class="d-flex header__search position-relative" role="search">
+                                        <input class="form-control form__control" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <i
+                                            class="header__search-icon fa-solid fa-magnifying-glass position-absolute px-1"></i>
+                                    </form>
+                                </div>
+                                <div class="col-2 d-flex align-items-center justify-content-center">
+                                    <i class="header__light-icon fa-regular fa-sun"></i>
+                                    <i class="header__dark-icon fa-regular fa-moon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- BANNER  -->
+        <section class="banner d-flex align-items-center justify-content-center">
+            <div class="banner__path">
+                <a href="../index.html">
+                    Home
+                </a>
+                <i class="fa-solid fa-angles-right"></i>
+                Blog page
+            </div>
+        </section>
+
+        <!-- BLOG POST  -->
+        <section class="blogPost py-5 bgDarkMode28">
+            <div class="container py-lg-5">
+                <div class="section__heading text-center">
+                    <h6>Latest Posts</h6>
+                    <h3 class="headingDarkColor">Blog Posts</h3>
+                </div>
+                <div class="section__body mt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 pe-lg-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g1.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Drinks</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        7:07 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">Hello world!</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5 mt-md-0 col-md-6">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g7.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Food</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        6:52 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">The Best Cookie Recipes To Bake This
+                                                Weekend</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-5">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g5.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Food</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        6:54 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">The Best Cookie Recipes To Bake This
+                                                Weekend</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-5">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g6.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Food</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        6:53 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">The Best Cookie Recipes To Bake This
+                                                Weekend</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-5">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g4.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Drinks</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        6:53 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">The Best Cookie Recipes To Bake This
+                                                Weekend</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-5">
+                                    <div class="card post__card bg-transparent border-0 rounded-0">
+                                        <a href="#">
+                                            <div class="card-img position-relative">
+                                                <img src="../assets/img/g3.jpg" class="card-img-top" alt="...">
+                                                <a href="" class="card-img__text position-absolute mb-0">
+                                                    <span class="card__categories">Food</span>
+                                                    <span class="card__time">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        6:52 am
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title headingDarkColor">The Best Cookie Recipes To Bake This
+                                                Weekend</h5>
+                                            <div class="card__author d-flex justify-content-between align-items-center">
+                                                <a href="#" class="card__autor-link headingDarkColor card__author-left">
+                                                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                                                        alt="">
+                                                    W3Layouts
+                                                </a>
+                                                <a href="#"
+                                                    class="btn card__autor-link headingDarkColor card__author-right">
+                                                    Read More
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="blogPost navigation" class="mt-5 blogPost__navi">
+                                <ul class="pagination justify-content-center">
+                                    <li class="blogPost-item"><a class="blogPost-link active" href="#">1</a></li>
+                                    <li class="blogPost-item"><a class="blogPost-link headingDarkColor"
+                                            href="./page-2/page-2.html">2</a></li>
+                                    <li class="blogPost-item"><a class="blogPost-link headingDarkColor"
+                                            href="./page-2/page-2.html">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                            <div class="blogPost__container bgDarkMode23">
+                                <div class="blogPost__search position-relative">
+                                    <input type="text" class="form__control w-100" placeholder="Search..">
+                                    <button class="btn primary-btn position-absolute">Search</button>
+                                </div>
+                            </div>
+                            <div class="blogPost__container bgDarkMode23">
+                                <h4 class="blogPost__title headingDarkColor primary__heading">Recent Posts</h4>
+                                <ul class="blogPost__recent-listblogPost__recent-list list-unstyled">
+                                    <li class="blogPost__recent-item">
+                                        <a href="#" class="blogPost__link darkTextColor">Hello World!</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">The Best Cookie Recipes To Bake
+                                            This
+                                            Weekend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">The Best Cookie Recipes To Bake
+                                            This
+                                            Weekend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">The Best Cookie Recipes To Bake
+                                            This
+                                            Weekend</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">The Best Cookie Recipes To Bake
+                                            This
+                                            Weekend</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blogPost__container bgDarkMode23">
+                                <h4 class="blogPost__title headingDarkColor primary__heading">Recent Comments</h4>
+                                <div class="blogPost__cmtText">
+                                    <a href="#">A WordPress Commenter</a>
+                                    <span class="darkTextColor">on</span>
+                                    <a href="#">Hello world!</a>
+                                </div>
+                                <div class="blogPost__cmtText">
+                                    <a href="#">A WordPress Commenter</a>
+                                    <span class="darkTextColor">on</span>
+                                    <a href="#">Hello world!</a>
+                                </div>
+                            </div>
+                            <div class="blogPost__container bgDarkMode23">
+                                <h4 class="blogPost__title headingDarkColor primary__heading">Archives</h4>
+                                <ul class="blogPost__list">
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">March 2021</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blogPost__container bgDarkMode23">
+                                <h4 class="blogPost__title headingDarkColor primary__heading">Categories</h4>
+                                <ul class="blogPost__list">
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">Drinks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">Food</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blogPost__container bgDarkMode23">
+                                <h4 class="blogPost__title headingDarkColor primary__heading">Meta</h4>
+                                <ul class="blogPost__list">
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">Log In</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">Entries Feed</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">Comments Feed</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="blogPost__link darkTextColor">WordPress.Org</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER  -->
+        <footer>
+            <div class="container-sm">
+                <div class="row footer__main">
+                    <div class="col-12 text-center text-sm-start mb-5 mb-lg-0 col-sm-6 col-lg-4">
+                        <a href="#" class="footer__brand">Diner</a>
+                        <p class="footer__item">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                            ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                        <div class="footer__icon text-center text-lg-start">
+                            <a href="#" class="text-decoration-none">
+                                <i class="footer__icon-item bgDarkMode23 fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="footer__icon-item bgDarkMode23 fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="footer__icon-item bgDarkMode23 fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="footer__icon-item bgDarkMode23 fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center text-sm-start mb-5 mb-lg-0 col-lg-2">
+                        <div class="footer__title">Categories</div>
+                        <div class="footer__item">
+                            <a href="" class="footer__link">Drinks</a>
+                        </div>
+                        <div class="footer__item">
+                            <a href="" class="footer__link">Food</a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center text-sm-start mb-5 mb-sm-0 col-lg-2">
+                        <div class="footer__title">Archives</div>
+                        <div class="footer__item">
+                            <a href="" class="footer__link">March 2021</a>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center text-sm-start col-sm-6 col-lg-4">
+                        <div class="footer__title">Subscribe to our Newsletter</div>
+                        <p class="footer__item">Enter your email and receive the latest news, updates and special offers
+                            from us</p>
+                        <form action="" class="footer__sub mt-4">
+                            <input type="text" class="w-100 form__control bgDarkMode23"
+                                placeholder="Your Email Address">
+                            <button class="btn primary-btn mt-3 w-100">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row footer__bottom">
+                    <div class="col-12 footer__bottom-content text-center text-lg-start">
+                        &copy 2023 Diner. All Rights Reserved | WordPress Theme by <a
+                            href="https://w3layouts.com/">W3Layouts.</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="backToTop__btn cd-top text-replace js-cd-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </div>
+
+    <!-- JQUERY  -->
+    <script src="../assets/js/jquery-3.6.4.min.js"></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- BACK TO TOP  -->
+    <script src="../assets/js/mainBacktoTop.js"></script>
+    <script src="../assets/js/util.js"></script>
+
+    <!-- MAIN JS  -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+@media screen and (max-width: 1199.98px) {
+    /* CAROUSEL  */
+    .carousel__title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    /* GLOBAL  */
+    .section__heading h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* CAROUSEL  */
+    .carousel__title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    /* HEADER  */
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: var(--bd-radius);
+    }
+
+    .header__light-icon {
+        color: var(--white-color);
+    }
+
+    /* CAROUSEL  */
+    .carousel__content {
+        height: 100vh;
+    }
+
+    /* ABOUT US  */
+    .aboutUs__text {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    /* CATEGORIES  */
+    .categories__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories__text h4 {
+        font-size: 18px;
+    }
+
+    .categories__text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .categories__text {
+        left: 24px;
+        bottom: 12px;
+    }
+
+    /* FEATURES  */
+    .features__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features__card-name {
+        font-size: 20px;
+    }
+
+
+    /* CAROUSEL  */
+    .myCarousel {
+        background-position: right center;
+    }
+
+    .carousel__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* AGENT  */
+    .agent__left {
+        margin: 0 8px;
+    }
+
+    .agent__left {
+        min-height: 200px;
+    }
+
+    /* WELLCOME  */
+    .wellcome__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* VIDEO  */
+    .video .video__number {
+        margin-top: 0;
+    }
+
+    /* BLOG  */
+    .post__card .card-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* FIND US */
+    .findUs .section__heading h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* CONTACT  */
+    .section__heading h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* FOOTER  */
+    .footer__brand {
+        margin-bottom: 4px;
+    }
+
+    .footer__title {
+        margin-bottom: 8px;
+    }
+
+    .footer__icon {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    /* GLOBAL  */
+    .section__heading h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    /* CAROUSEL  */
+    .nav__link {
+        font-size: 16px;
+    }
+
+    /* TEAM  */
+    .team .card-title {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    /* WELLCOME  */
+    .wellcome__title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    /* FEEDBACK  */
+    .feedback__item .quote-heading {
+        font-size: 22px;
+    }
+
+    .feedback__item .quote-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {   
+    /* GLOLBAL  */
+    .section__heading h6 {
+        font-size: 16px;
+    }
+
+    .section__heading h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .primary__text {
+        font-size: 16px;
+    }
+
+    .form__control {
+        font-size: 16px !important;
+    }
+
+    /* HEADER  */
+    #myNavbar .nav__link {
+        font-size: 16px;
+    }
+
+    .navbar-collapse {
+        margin: 0 4px;
+    }
+
+    /* CAROUSEL  */
+    .carousel__content {
+        max-height: 95vh;
+    }
+
+    .carousel__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    /* AGENT  */
+    .agent__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .agent__title {
+        font-size: 18px;
+    }
+
+    .agent__right {
+        margin-top: 24px;
+    }
+
+    /* ABOUT US  */
+    .aboutUs__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* CATEGORIES  */
+    .categories__content {
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+
+    .categories__link {
+        padding: 0 8px;
+    }
+
+    /* FEATURES  */
+    .features__list {
+        grid-template-columns: 1fr;
+    }
+
+    .features .card-body {
+        padding: 30px;
+    }
+
+    .features__card-number,
+    .features .card-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .categories__text p {
+        margin-top: 0;
+    }
+
+    /* WELLCOME  */
+    .wellcome .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* VIDEO  */
+    .video .counter {
+        font-size: 32px;
+    }
+
+    .video__play-link {
+        min-height: 300px;
+    }
+
+    .secondary__btn {
+        padding: 10px 21px;
+    }
+
+    /* FEEDBACK  */
+    .feedback__item .quote-heading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* CONTACT  */
+    .contact .section__heading p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .contact_input {
+        margin-bottom: 20px;
+    }
+
+    .contact .primary-btn {
+        padding: 10px 21px;
+    }
+
+    .comtact .form__control {
+        font-size: 16px;
+    }
+
+    /* FOOTER  */
+    .footer__brand,
+    .footer__title {
+        margin-bottom: 8px;
+    }
+
+    .footer__sub .form__control {
+        font-size: 14px;
+    }
+
+    .footer__btn {
+        font-size: 14px;
+    }
+
+    .footer__bottom-content {
+        font-size: 14px;
+    }
+}
