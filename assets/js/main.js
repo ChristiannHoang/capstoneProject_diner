@@ -3,6 +3,15 @@ function darkMode() {
     document.querySelector('.header__dark-icon').style.display = 'none';
     document.querySelector('.header__light-icon').style.display = 'block';
 
+    // DARK NAVBAR 
+    var navItems = document.querySelectorAll('#myNavbar .nav__link');
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].style.color = '#232220';
+        if (navItems[i].classList == 'nav-link nav__link active') {
+            navItems[i].style.cssText = 'background-color: var(--heading-color); color: var(--white-color);';
+        }
+    }
+
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');
     var bgDarkMode23Length = bgDarkMode23.length;
@@ -51,6 +60,21 @@ function lightMode() {
     // CHANGE ICON 
     document.querySelector('.header__dark-icon').style.display = 'block';
     document.querySelector('.header__light-icon').style.display = 'none';
+
+    // DARK MODE 
+    var navItems = document.querySelectorAll('#myNavbar .nav__link');
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].style.color = '#fff';
+    }
+
+    // DARK NAVBAR 
+    var navItems = document.querySelectorAll('#myNavbar .nav__link');
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].style.color = '#fff';
+        if (navItems[i].classList == 'nav-link nav__link active') {
+            navItems[i].style.cssText = 'background-color: var(--white-color); color: var(--primary-color);';
+        }
+    }
 
     // BG DARK MODE BOLD 232220
     var bgDarkMode23 = document.querySelectorAll('.bgDarkMode23');

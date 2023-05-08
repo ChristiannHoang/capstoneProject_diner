@@ -118,7 +118,7 @@ body {
 }
 
 /* BACK TO TOP  */
-/* .backToTop__btn {
+.backToTop__btn {
     position: fixed;
     right: 25px;
     bottom: 50px;
@@ -137,35 +137,7 @@ body {
 
 .backToTop__btn i {
     color: var(--white-color);
-} */
-
-/* .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.cd-top--fade-out {
-    opacity: .5;
-} */
-
-.backToTop__btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: black;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.backToTop__btn i {
-    color: white;
-}
+} 
 
 .cd-top--is-visible {
     visibility: visible;
