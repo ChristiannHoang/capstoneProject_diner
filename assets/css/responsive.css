@@ -1,4 +1,5 @@
 @media screen and (max-width: 1199.98px) {
+
     /* CAROUSEL  */
     .carousel__title {
         font-size: 48px;
@@ -19,6 +20,7 @@
 }
 
 @media screen and (max-width: 991.98px) {
+
     /* HEADER  */
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.8);
@@ -139,6 +141,11 @@
         line-height: 38px;
     }
 
+    /* HEADER  */
+    header .navbar {
+        padding: 16px 0;
+    }
+
     /* CAROUSEL  */
     .nav__link {
         font-size: 16px;
@@ -167,7 +174,8 @@
     }
 }
 
-@media screen and (max-width: 575.98px) {   
+@media screen and (max-width: 575.98px) {
+
     /* GLOLBAL  */
     .section__heading h6 {
         font-size: 16px;
@@ -313,5 +321,11 @@
 
     .footer__bottom-content {
         font-size: 14px;
+    }
+
+    /* ABOUT PAGE  */
+    /* BANNER  */
+    .banner {
+        min-height: 250px;
     }
 }
