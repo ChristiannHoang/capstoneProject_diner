@@ -1,13 +1,9 @@
-@media screen and (max-width: 1399.98px) {
-
+@media screen and (max-width: 1199.98px) {
     /* CAROUSEL  */
     .carousel__title {
-        font-size: 54px;
-        line-height: 64px;
+        font-size: 48px;
+        line-height: 58px;
     }
-}
-
-@media screen and (max-width: 1199.98px) {
 
     /* GLOBAL  */
     .section__heading h3 {
@@ -35,7 +31,7 @@
 
     /* CAROUSEL  */
     .carousel__content {
-        height: 65vh;
+        height: 100vh;
     }
 
     /* ABOUT US  */
@@ -171,8 +167,7 @@
     }
 }
 
-@media screen and (max-width: 575.98px) {
-
+@media screen and (max-width: 575.98px) {   
     /* GLOLBAL  */
     .section__heading h6 {
         font-size: 16px;
@@ -185,6 +180,10 @@
 
     .primary__text {
         font-size: 16px;
+    }
+
+    .form__control {
+        font-size: 16px !important;
     }
 
     /* HEADER  */

@@ -102,12 +102,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .carousel__content {
-    height: 100vh;
     color: var(--white-color);
     position: relative;
+    height: 100vh;
 }
 
 .myCarousel .overlay {
@@ -118,8 +119,8 @@ header {
 }
 
 .carousel__title {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 54px;
+    line-height: 64px;
     font-weight: 600;
     transition: all .5s;
 }

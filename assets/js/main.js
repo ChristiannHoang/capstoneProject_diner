@@ -41,10 +41,10 @@ function darkMode() {
     }
 
     // BTN SECONDARY DARK 
-    var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
-    for (var i = 0; i < secondaryBtnDark.length; i++) {
-        secondaryBtnDark[i].classList.add('dark-mode');
-    }
+    // var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
+    // for (var i = 0; i < secondaryBtnDark.length; i++) {
+    //     secondaryBtnDark[i].classList.add('dark-mode');
+    // }
 
     // FORM DARK MODE BOLD 232220
     var formControl = document.querySelectorAll('.form__control');
@@ -104,11 +104,11 @@ function lightMode() {
         darkTextColor[i].style.color = '#161c2db3';
     }
 
-    // BTN SECONDARY DARK 
-    var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
-    for (var i = 0; i < secondaryBtnDark.length; i++) {
-        secondaryBtnDark[i].classList.remove('dark-mode');
-    }
+    // // BTN SECONDARY DARK 
+    // var secondaryBtnDark = document.querySelectorAll('.secondary__btn');
+    // for (var i = 0; i < secondaryBtnDark.length; i++) {
+    //     secondaryBtnDark[i].classList.remove('dark-mode');
+    // }
 
     // FORM DARK MODE BOLD 232220
     var formControl = document.querySelectorAll('.form__control');
